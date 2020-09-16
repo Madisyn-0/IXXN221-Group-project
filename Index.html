@@ -21,45 +21,70 @@
                     Filter
                 </div>
             </div>
-            <div class="button">
+            <div class="button" id="right">
                 <div class="inner">
                     About
                 </div>
             </div>
-            <div class="button">
+            <div class="button" id="left">
                 <div class="inner">
                     Nominate
                 </div>
             </div>
         </nav>
-        <div class="content">
-            <div class="card">
-                <div class="inner">
-                    Very cool business
+        <div class="content" id="container">
+            <div class="index">
+                <div class="card">
+                    <div class="inner">
+                        Very cool business
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner">
+                        Very cool business
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner">
+                        Very cool business
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner">
+                        Very cool business
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="inner">
+                        Very cool business
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="inner">
-                    Very cool business
-                </div>
-            </div>
-            <div class="card">
-                <div class="inner">
-                    Very cool business
-                </div>
-            </div>
-            <div class="card">
-                <div class="inner">
-                    Very cool business
-                </div>
-            </div>
-            <div class="card">
-                <div class="inner">
-                    Very cool business
+            <div class="about">
+                <div class="card">
+                    <div class="inner">
+                        Very cool about page
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <script>
+            const button1 = document.getElementById('right');
+
+            button1.onclick = function () {
+                document.getElementById('container').scrollLeft = 10000;
+                behavior
+            };
+
+            const button2 = document.getElementById('left');
+
+            button2.onclick = function () {
+                document.getElementById('container').scrollLeft = -10000;
+                behavior
+            };
+        </script>
+
 </body>
 
 </html>

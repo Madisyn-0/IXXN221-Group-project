@@ -20,26 +20,6 @@ nav {
     gap: 20px; 
 }
 
-.content {
-    background-color: #eee;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    overflow-y:scroll;
-    grid-auto-rows: 50%;
-    gap: 20px;
-}
-
-.card {
-    background-color: #ddd;
-    display: grid;
-    grid-template-columns: auto;
-
-}
-
 .logo {
     display: grid;
     grid-template-columns: 1fr;
@@ -56,9 +36,53 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #ddd;
+    transition: .2s;
+}
+
+.button:hover {
+    background-color: #ccc;
 }
 
 .inner {
     align-self: center;
     justify-self: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    overflow-x:scroll;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #eee;
+    gap: 20px;
+}
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-y:scroll;
+    grid-auto-rows: 50%;
+    gap: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.about {
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: auto;
+
 }
