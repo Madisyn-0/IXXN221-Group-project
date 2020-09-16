@@ -5,35 +5,60 @@ html, body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 250px auto;
     gap: 20px;
     height: 100vh;
-    background-color: thistle;
 }
 
 nav {
-    background: teal;
+    background-color: #eee;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-
-    
+    grid-template-rows: 50px auto 50px 50px;
+    gap: 20px; 
 }
 
 .content {
-    background: tomato;
+    background-color: #eee;
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    overflow-y:scroll;
+    grid-auto-rows: 50%;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: auto;
+
 }
 
 .logo {
-    background-color: turquoise;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ddd;
+}
+
+.filter {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ddd;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ddd;
+}
+
+.inner {
     align-self: center;
-    align-content: center;
-
-
+    justify-self: center;
 }
