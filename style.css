@@ -121,7 +121,6 @@ section {
 .principlewrapper {
     display: grid;
     margin-top: 20px;
-    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #333;
     height: calc(100% - 75px);
@@ -129,6 +128,18 @@ section {
 
 .principle {
     background-color: #444;
+    border-right: 1px solid gray;
+    text-align: center;
+}
+
+.principleimg {
+    width: 100%;
+    height: auto;
+}
+
+.principletitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .editorwrapper {
@@ -143,7 +154,7 @@ section {
 .editor {
     background-color: #444;
     display: grid;
-    grid-template-columns: 365 auto;
+    grid-template-columns: 365px auto;
 }
 
 .editorImg {
@@ -151,7 +162,7 @@ section {
 }
 
 .editorAbout {
-    margin: 20px;
+
 }
 
 .editorAbout h2 {
