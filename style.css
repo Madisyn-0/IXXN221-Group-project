@@ -120,16 +120,19 @@ section {
 
 .principlewrapper {
     display: grid;
-    margin-top: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
     background-color: #333;
     height: calc(100% - 75px);
 }
 
 .principle {
+    align-self: center;
+    min-height: 365px;
     background-color: #444;
     border-right: 1px solid gray;
     text-align: center;
+    background-color: aqua;
 }
 
 .principleimg {
