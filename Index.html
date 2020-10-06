@@ -20,20 +20,21 @@
                     Know a great place?
                 </div>
 
-                <div>
-                    <p>I AM A:</p>
 
-                    <form class="boxed">
-                        <input type="radio" id="android" name="skills" value="Android Development">
-                        <label for="android">BUSINESS OWNER</label>
-
-                        <input type="radio" id="ios" name="skills" value="iOS Development">
-                        <label for="ios">CUSTOMER </label>
-
-                </div>
 
                 <div class="formwrapper">
                     <div class="form">
+                        <div>
+                            <p>I AM A:</p>
+
+                            <form class="boxed">
+                                <input type="radio" id="android" name="skills" value="Android Development">
+                                <label for="android">BUSINESS OWNER</label>
+
+                                <input type="radio" id="ios" name="skills" value="iOS Development">
+                                <label for="ios">CUSTOMER </label>
+
+                        </div>
 
                         <label for="name">YOUR NAME:</label>
                         <input type="text" id="name" name="name" placeholder="Your name..">
@@ -44,16 +45,14 @@
 
 
                         <label for="reason">REASON FOR NOMINATING</label>
-                        <textarea id="reason" name="reason" placeholder="Write something.." style="height:200px"></textarea>
+                        <textarea id="reason" name="reason" placeholder="Write something.."
+                            style="height:200px"></textarea>
 
                         <input class="submit" type="submit" value="Submit">
                         </form>
 
 
                     </div>
-
-
-
 
 
                     <div class="illustration">
@@ -123,23 +122,25 @@
                 <div class="principlewrapper">
                     <div class="principle">
                         <img class="principleimg" src="test.png" alt="test">
-                        <div class = "principletitle">charitable</div>
+                        <div class="principletitle">charitable</div>
                         <p>principletext principletext principletext principletext principletext principletext</p>
                     </div>
                     <div class="principle">
                         <img class="principleimg" src="test.png" alt="test">
-                        <div class = "principletitle">charitable</div>
+                        <div class="principletitle">charitable</div>
                         <p>principletext principletext principletext principletext principletext principletext</p>
                     </div>
                     <div class="principle">
                         <img class="principleimg" src="test.png" alt="test">
-                        <div class = "principletitle">charitable</div>
+                        <div class="principletitle">charitable</div>
                         <p>principletext principletext principletext principletext principletext principletext</p>
                     </div>
                     <div class="principle">
                         <img class="principleimg" src="test.png" alt="test">
-                        <div class = "principletitle">charitable</div>
-                        <p>principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext principletext</p>
+                        <div class="principletitle">charitable</div>
+                        <p>principletext principletext principletext principletext principletext principletext
+                            principletext principletext principletext principletext principletext principletext
+                            principletext principletext principletext principletext principletext principletext</p>
                     </div>
                 </div>
             </section>
@@ -221,14 +222,14 @@
     <script>
         const button1 = document.getElementById('right');
 
-        button1.onclick = function() {
+        button1.onclick = function () {
             document.getElementById('container').scrollLeft = 10000;
             behavior
         };
 
         const button2 = document.getElementById('left');
 
-        button2.onclick = function() {
+        button2.onclick = function () {
             document.getElementById('container').scrollLeft = -10000;
             behavior
         };
