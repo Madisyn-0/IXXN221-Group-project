@@ -1,8 +1,8 @@
-html,
-body {
+html, body {
     padding: 0px;
     margin: 0px;
     color: #eee;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -32,7 +32,7 @@ section {
     padding-right: 150px;
     padding-left: 150px;
     background-color: #222;
-    min-height: calc(100% - 20px);
+    min-height: calc(100% - 20px) ;
 }
 
 .formwrapper {
@@ -45,16 +45,19 @@ section {
 }
 
 .form {
-    background-color: rgb(255, 255, 255);
+    background-color: #444;
 }
 
 .illustration {
-    background-color: #ffffff;
+    background-color: #444;
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
     height: 35px;
     background-color: #333;
+    align-items: center;
 }
 
 .businesswrapper {
@@ -67,19 +70,57 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
+
 .botd {
     background-color: #444;
     grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.botdImg {
+    background-color: #eee;
+}
+
+.botdContent {
+    margin: 20px;
+}
+
+.botdContent h2 {
+    font-weight: 900;
+}
+
+.botdContent p {
+    /* max-width: 50%; */
+    font-weight: 300;
 }
 
 .business {
     background-color: #444;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.businessImg {
+    background-color: #eee;
+}
+
+.businessContent {
+    margin: 20px;
+}
+
+.businessContent h2 {
+    font-weight: 900;
+    margin: 0px;
+}
+
+.businessContent p {
+    font-weight: 300;
 }
 
 .principlewrapper {
     display: grid;
     margin-top: 20px;
-    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #333;
     height: calc(100% - 75px);
@@ -87,6 +128,18 @@ section {
 
 .principle {
     background-color: #444;
+    border-right: 1px solid gray;
+    text-align: center;
+}
+
+.principleimg {
+    width: 100%;
+    height: auto;
+}
+
+.principletitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .editorwrapper {
@@ -100,75 +153,26 @@ section {
 
 .editor {
     background-color: #444;
+    display: grid;
+    grid-template-columns: 365px auto;
+}
+
+.editorImg {
+    background-color: #eee;
+}
+
+.editorAbout {
+
+}
+
+.editorAbout h2 {
+    font-weight: 900;
+    margin: 0px;
+}
+
+.editorAbout p {
+    /* max-width: 50%; */
+    font-weight: 300;
 }
 
 
-/* css for nomination page */
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border-bottom: 1px solid #FFAC31;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-.form {
-    font-size: 18px;
-    color: #111;
-}
-
-input[type=submit] {
-    background-color: #FFAC31;
-    color: #00000;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.submit {
-    width: 100px;
-    position: center;
-}
-
-input[type=submit]:hover {
-    background-color: #FFAC31;
-}
-
-.container {
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.boxed label {
-    display: inline-block;
-    width: 150px;
-    height: 1px;
-    border-radius: 50px;
-    padding: 20px 15px;
-    border: solid 2px #F6F8F9;
-    background: #F6F8F9;
-    transition: all 0.3s;
-    text-align: center;
-}
-
-.boxed {
-    color: #111;
-    font-size: 14px;
-}
-
-.boxed input[type="radio"] {
-    display: none;
-}
-
-.boxed input[type="radio"]:checked+label {
-    border: solid 2px FFAC31;
-    background: #FFAC31;
-}
