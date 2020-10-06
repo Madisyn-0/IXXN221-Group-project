@@ -91,7 +91,7 @@ section {
 }
 
 .botdContent p {
-    max-width: 50%;
+    /* max-width: 50%; */
     font-weight: 300;
 }
 
@@ -160,7 +160,7 @@ section {
 }
 
 .editorAbout p {
-    max-width: 50%;
+    /* max-width: 50%; */
     font-weight: 300;
 }
 
