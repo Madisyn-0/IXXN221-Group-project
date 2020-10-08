@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     padding: 0px;
     margin: 0px;
     color: #eee;
@@ -32,7 +33,7 @@ section {
     padding-right: 150px;
     padding-left: 150px;
     background-color: #222;
-    min-height: calc(100% - 20px) ;
+    min-height: calc(100% - 20px);
 }
 
 .formwrapper {
@@ -69,7 +70,6 @@ section {
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
 }
-
 
 .botd {
     background-color: #444;
@@ -197,3 +197,73 @@ section {
 }
 
 
+/* css for nomination page */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid #FFAC31;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form {
+    font-size: 18px;
+    color: #111;
+}
+
+input[type=submit] {
+    background-color: #005F54;
+    color: #00000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.submit {
+    width: 100px;
+    height: 25px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #FFAC31;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.boxed label {
+    display: center;
+    width: 150px;
+    height: 1px;
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: solid 2px #F6F8F9;
+    background: #F6F8F9;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.boxed {
+    color: #111;
+    font-size: 14px;
+}
+
+.boxed input[type="radio"] {
+    display: none;
+}
+
+.boxed input[type="radio"]:checked+label {
+    border: solid 2px FFAC31;
+    background: #FFAC31;
+}
