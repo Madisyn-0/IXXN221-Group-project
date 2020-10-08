@@ -88,10 +88,12 @@ section {
 
 .botdContent h2 {
     font-weight: 900;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .botdContent p {
-    /* max-width: 50%; */
     font-weight: 300;
 }
 
@@ -118,6 +120,18 @@ section {
     font-weight: 300;
 }
 
+.businessIcons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    column-gap: 10px;
+}
+
+.icons {
+    width: 100%;
+    height: auto;
+}
+
 .principlewrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -132,17 +146,20 @@ section {
     background-color: #444;
     border-right: 1px solid gray;
     text-align: center;
-    background-color: aqua;
 }
 
 .principleimg {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .principletitle {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.principle p {
+    margin: 20px;
 }
 
 .editorwrapper {
@@ -161,6 +178,7 @@ section {
 }
 
 .editorImg {
+    width: 365px;
     background-color: #eee;
 }
 
