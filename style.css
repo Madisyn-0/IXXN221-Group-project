@@ -50,7 +50,8 @@ section {
 }
 
 .illustration {
-    background-color: #444;
+    align-self: center;
+    width: 90%;
 }
 
 .header {
@@ -151,8 +152,16 @@ section {
 .principleimg {
     width: 80%;
     height: auto;
+    fill: #FFAC31;
 }
 
+.st0 {
+    fill: #FFAC31;
+}
+
+.st1 {
+    fill: transparent;
+}
 .principletitle {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -196,6 +205,19 @@ section {
     font-weight: 300;
 }
 
+.editorIcons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #FFAC31;
+}
+
+.editoricons {
+    width: 50%;
+    align-self: center;
+}
+
 
 /* css for nomination page */
 
@@ -221,10 +243,14 @@ textarea {
 
 input[type=submit] {
     background-color: #005F54;
-    color: #00000;
+    color: #000000;
     border: none;
     border-radius: 15px;
     cursor: pointer;
+}
+
+input[type=submit]:focus {
+    border: none;
 }
 
 .submit {
@@ -267,4 +293,8 @@ input[type=submit]:hover {
 .boxed input[type="radio"]:checked+label {
     border: solid 2px #005F54;
     background: #005F54;
+}
+
+#reason::placeholder {
+    font-family: 'Roboto', sans-serif;
 }
