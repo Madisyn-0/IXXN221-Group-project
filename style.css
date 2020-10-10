@@ -23,6 +23,7 @@ nav {
 .leftButton {
     text-align: left;
 }
+
 .logo {
     text-align: center;
     font-weight: 900;
@@ -52,6 +53,45 @@ section {
     min-height: calc(100% - 20px);
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    background-color: #333;
+    align-items: center;
+    font-weight: 900;
+    color: #000000;
+}
+
+/* buttons */
+.learnMore, .visitUs, .lmButton, .filterBy{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: #005F54;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    max-width: max-content;
+    font-weight: 500;
+}
+
+.lmButton {
+    position: relative;
+    top: 145px;
+}
+
+.learnMore:hover,  .visitUs:hover, .lmButton:hover, .filterBy:hover{
+    background-color: #ffffff;
+    border: 1px solid #005F54;
+    color: #005F54;
+    cursor: pointer;
+}
+
 .formwrapper {
     display: grid;
     margin-top: 20px;
@@ -70,14 +110,6 @@ section {
     width: 90%;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    height: 35px;
-    background-color: #333;
-    align-items: center;
-}
-
 .businesswrapper {
     margin-top: 20px;
     background-color: #333;
@@ -93,12 +125,13 @@ section {
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 .botdImg {
     background-color: #eee;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .botdContent {
@@ -123,22 +156,6 @@ section {
     float: right;
 }
 
-.learnMore, .visitUs{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #005F54;
-    color: #ffffff;
-    border-radius: 15px;
-    padding: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: 20px;
-    /* align-self: flex-end; */
-}
-
 .business {
     background-color: #ffffff;
     display: grid;
@@ -148,7 +165,7 @@ section {
 .businessImg {
     background-color: #eee;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .businessContent {
@@ -184,21 +201,6 @@ section {
     border-radius: 100px;
 }
 
-.lmButton {
-    margin-top: 20px;
-    background-color: #005F54;
-    color: #ffffff;
-    border-radius: 15px;
-    padding: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: center;
-    max-width: max-content;
-    margin-left: auto;
-    position: relative;
-    top: 145px;
-}
-
 .principlewrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -210,10 +212,13 @@ section {
 .principle {
     align-self: center;
     min-height: 365px;
-    background-color: #444;
-    border-right: 1px solid gray;
+    background-color: #ffffff;
     text-align: center;
     padding: 20px;
+}
+
+.A, .B, .C {
+    border-right: 1px solid #FFAC31;
 }
 
 .principleimg {
@@ -231,13 +236,17 @@ section {
 .st1 {
     fill: transparent;
 }
+
 .principletitle {
     margin-top: 25px;
     margin-bottom: 25px;
+    color: #005F54;
+    font-weight: 900;
 }
 
 .principle p {
     margin: 20px;
+    color: #000000;
 }
 
 .editorwrapper {
@@ -293,7 +302,6 @@ section {
     margin-right: auto;
 }
 
-
 /* css for nomination page */
 
 input[type=text],
@@ -319,6 +327,10 @@ textarea {
 
 input[type=submit] {
     background-color: #005F54;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: max-content;
     color: #ffffff;
     border: none;
     border-radius: 15px;
@@ -337,7 +349,10 @@ input[type=submit]:focus {
 }
 
 input[type=submit]:hover {
-    background-color: #FFAC31;
+    background-color: #ffffff;
+    border: 1px solid #005F54;
+    color: #005F54;
+    cursor: pointer;
 }
 
 .container {
@@ -350,10 +365,16 @@ input[type=submit]:hover {
     width: 150px;
     height: 1px;
     border-radius: 50px;
-    padding: 5px 15px;
+    padding: 5px 25px;
     background: #F6F8F9;
     transition: all 0.3s;
     text-align: center;
+    margin-left: 20px;
+}
+
+.boxed label:hover {
+    color: #005F54;
+    cursor: pointer;
 }
 
 .boxed {
@@ -363,12 +384,18 @@ input[type=submit]:hover {
     padding-top: 20px;
 }
 
+
+
 .boxed input[type="radio"] {
     display: none;
 }
 
 .boxed input[type="radio"]:checked+label {
     border: solid 2px #005F54;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: max-content;
     background: #005F54;
     color: #ffffff;
 }
