@@ -12,8 +12,24 @@ body {
 
 nav {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #222;
     height: 45px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.leftButton {
+    text-align: left;
+}
+.logo {
+    text-align: center;
+    font-weight: 900;
+}
+
+.rightButton {
+    text-align: right;
 }
 
 .contentwrapper {
@@ -73,7 +89,7 @@ section {
 }
 
 .botd {
-    background-color: #444;
+    background-color: #ffffff;
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -81,10 +97,13 @@ section {
 
 .botdImg {
     background-color: #eee;
+    width: 100%;
+    height: 100%;
 }
 
 .botdContent {
     margin: 20px;
+    color: #000000;
 }
 
 .botdContent h2 {
@@ -92,24 +111,49 @@ section {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #005F54;
 }
 
 .botdContent p {
     font-weight: 300;
 }
 
+.botdButton {
+    display: flex;
+    float: right;
+}
+
+.learnMore, .visitUs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #005F54;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: 20px;
+    /* align-self: flex-end; */
+}
+
 .business {
-    background-color: #444;
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: 60% 40%;
 }
 
 .businessImg {
     background-color: #eee;
+    width: 100%;
+    height: 100%;
 }
 
 .businessContent {
     margin: 20px;
+    color: #000000;
 }
 
 .businessContent h2 {
@@ -119,6 +163,8 @@ section {
 
 .businessContent p {
     font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .businessIcons {
@@ -129,8 +175,28 @@ section {
 }
 
 .icons {
-    width: 100%;
+    width: 50%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: #FFAC31;
+    border-radius: 100px;
+}
+
+.lmButton {
+    margin-top: 20px;
+    background-color: #005F54;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    max-width: max-content;
+    margin-left: auto;
+    position: relative;
+    top: 145px;
 }
 
 .principlewrapper {
@@ -147,12 +213,15 @@ section {
     background-color: #444;
     border-right: 1px solid gray;
     text-align: center;
+    padding: 20px;
 }
 
 .principleimg {
-    width: 80%;
+    width: 50%;
     height: auto;
-    fill: #FFAC31;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 .st0 {
@@ -181,7 +250,8 @@ section {
 }
 
 .editor {
-    background-color: #444;
+    background-color: #ffffff;
+    color: #000000;
     display: grid;
     grid-template-columns: 365px auto;
 }
@@ -198,10 +268,13 @@ section {
 .editorAbout h2 {
     font-weight: 900;
     margin: 0px;
+    color: #005F54;
 }
 
+.editorSocials {
+    margin-top: 50px;
+}
 .editorAbout p {
-    /* max-width: 50%; */
     font-weight: 300;
 }
 
@@ -209,13 +282,15 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    column-gap: 10px;
-    background-color: #FFAC31;
+    column-gap: 5px;
+    float: left;
 }
 
 .editoricons {
-    width: 50%;
+    width: 40%;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -234,6 +309,7 @@ textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    margin-right: 20px;
 }
 
 .form {
@@ -243,10 +319,11 @@ textarea {
 
 input[type=submit] {
     background-color: #005F54;
-    color: #000000;
+    color: #ffffff;
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 input[type=submit]:focus {
@@ -293,6 +370,7 @@ input[type=submit]:hover {
 .boxed input[type="radio"]:checked+label {
     border: solid 2px #005F54;
     background: #005F54;
+    color: #ffffff;
 }
 
 #reason::placeholder {
