@@ -10,6 +10,42 @@
 </head>
 
 <body>
+    <div class="content" id="modal" onclick="this.style.display='none'">
+        <div class="abtbusinesswrapper">
+            <div class="abtbusiness">
+                <h4>BUSINESS OF THE DAY</h4>
+                <h2>WREN KITCHEN</h2>
+                <h3>MT WELLINGTON, AKL</h3>
+                <ul class="infowrapper">
+                    <li class="info">HOURS:<h5>Mon - Sun</h5>
+                        <h5>8am - 3pm</h5>
+                    </li>
+                    <li class="info">LOCATION:<h5>46 Lunn Avenue</h5>
+                    </li>
+                    <li class="info">CONTACT:<h5>(09) 553 8927</h5>
+                    </li>
+                    <li class="info">ATMOSPHERE:<h5>Cozy, Casual, Pet Friendly</h5>
+                    </li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                </p>
+                <h6>Katrina Villareal</h6>
+                <button class="businessbutton">Visit us</button>
+            </div>
+            <img src="img/wrenrescaled.jpg">
+        </div>
+    </div>
     <nav>
         <button class="leftButton" id="left" onclick="tonominate()">Nominate</button>
         <div class="logo">PHONEBOOK</div>
@@ -61,18 +97,20 @@
                 </div>
             </div>
             <div class="businesswrapper">
-                <div class="botd">
-                    <img class="botdimg" src="img/wrenrescaled.jpg" alt="wren">
-                    <div class="botdContent">
-                        <h4>BUSINESS OF THE DAY</h4>
-                        <h2>WREN KITCHEN</h2>
-                        <h3>MT WELLINGTON, AKL</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. </p>
-                        <div class="botdbuttonwrapper">
-                            <button class="botdbutton">VISIT US</button>
-                            <button class="botdbutton">LEARN MORE</button>
+                <div class="divider botddivider">
+                    <div class="botd">
+                        <img class="botdimg" src="img/wrenrescaled.jpg" alt="wren">
+                        <div class="botdContent">
+                            <h4>BUSINESS OF THE DAY</h4>
+                            <h2>WREN KITCHEN</h2>
+                            <h3>MT WELLINGTON, AKL</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.</p>
+                            <div class="botdbuttonwrapper">
+                                <button class="botdbutton">VISIT US</button>
+                                <button class="botdbutton" onclick="openmodal()">LEARN MORE</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +126,7 @@
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <button class="businessbutton">LEARN MORE</button>
+                        <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="business">
@@ -101,7 +139,7 @@
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <button class="businessbutton">LEARN MORE</button>
+                        <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="business">
@@ -114,7 +152,7 @@
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <button class="businessbutton">LEARN MORE</button>
+                        <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="business">
@@ -127,7 +165,7 @@
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <button class="businessbutton">LEARN MORE</button>
+                        <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                     </div>
                 </div>
             </div>
@@ -141,14 +179,12 @@
                     <object class="principleimg" data="img/value.svg"></object>
                     <div class="principletitle">VALUE</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </div>
                 <div class="principle B">
                     <object class="principleimg" data="img/charitable.svg"></object>
                     <div class="principletitle">CHARITABLE</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </div>
                 <div class="principle C">
@@ -180,14 +216,12 @@
                         LOCATION
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </div>
                 <div class="principle">
                     <object class="principleimg" data="img/eco.svg"></object>
                     <div class="principletitle">ECO-FRIENDLY</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </div>
             </div>
@@ -197,8 +231,9 @@
         <div class="wrapper">
             <div class="header">MEET OUR EDITORS</div>
             <div class="editorwrapper">
+                <div class="divider">
                 <div class="editor">
-                    <img class="editorImg" src="img/test.png" alt="test">
+                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
                     <div class="editorAbout">
                         <div>
                             <h2>Jack Bublitz</h2>
@@ -206,24 +241,22 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. </p>
+                                et dolore magna aliqua.</p>
                         </div>
-                        <div class="editorSocials">
-                            <p>Find Jack at:</p>
-                            <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                            </div>
+                        <p>Find Jack at:</p>
+                        <div class="editorIcons">
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/eco.svg"></object>
+                            <object class="editoricons" data="img/casual.svg"></object>
                         </div>
-                        <div class="filterBy">
-                            FILTER BY EDITOR
-                        </div>
+                        <button class="businessbutton editorbutton" onclick="toindex()">FILTER BY EDITOR</button>
                     </div>
                 </div>
+            </div>
+            <div class="divider">
                 <div class="editor">
-                    <img class="editorImg" src="img/test.png" alt="test">
+                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
                     <div class="editorAbout">
                         <div>
                             <h2>Madisyn Muggeridge</h2>
@@ -231,24 +264,22 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. </p>
+                                et dolore magna aliqua.</p>
                         </div>
-                        <div class="editorSocials">
-                            <p>Find Madisyn at:</p>
-                            <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                            </div>
+                        <p>Find Madisyn at:</p>
+                        <div class="editorIcons">
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/eco.svg"></object>
+                            <object class="editoricons" data="img/casual.svg"></object>
                         </div>
-                        <div class="filterBy">
-                            FILTER BY EDITOR
-                        </div>
+                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                     </div>
                 </div>
+            </div>
+            <div class="divider">
                 <div class="editor">
-                    <img class="editorImg" src="img/test.png" alt="test">
+                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
                     <div class="editorAbout">
                         <div>
                             <h2>Cindy Cruz</h2>
@@ -256,24 +287,22 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. </p>
+                                et dolore magna aliqua.</p>
                         </div>
-                        <div class="editorSocials">
-                            <p>Find Cindy at:</p>
-                            <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                            </div>
+                        <p>Find Cindy at:</p>
+                        <div class="editorIcons">
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/eco.svg"></object>
+                            <object class="editoricons" data="img/casual.svg"></object>
                         </div>
-                        <div class="filterBy">
-                            FILTER BY EDITOR
-                        </div>
+                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                     </div>
                 </div>
+            </div>
+                <div class="divider">
                 <div class="editor">
-                    <img class="editorImg" src="img/test.png" alt="test">
+                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
                     <div class="editorAbout">
                         <div>
                             <h2>Jamie Gambles</h2>
@@ -281,24 +310,21 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. </p>
+                                et dolore magna aliqua.</p>
                         </div>
-                        <div class="editorSocials">
-                            <p>Find Jamie at:</p>
-                            <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                            </div>
+                        <p>Find Jamie at:</p>
+                        <div class="editorIcons">
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/eco.svg"></object>
+                            <object class="editoricons" data="img/casual.svg"></object>
                         </div>
-                        <div class="filterBy">
-                            FILTER BY EDITOR
-                        </div>
+                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                     </div>
                 </div>
+            </div>
                 <div class="editor">
-                    <img class="editorImg" src="img/test.png" alt="test">
+                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
                     <div class="editorAbout">
                         <div>
                             <h2>Katrina Villareal</h2>
@@ -306,20 +332,16 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. </p>
+                                et dolore magna aliqua.</p>
                         </div>
-                        <div class="editorSocials">
-                            <p>Find Katrina at:</p>
-                            <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                            </div>
+                        <p>Find Katrina at:</p>
+                        <div class="editorIcons">
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/clock.svg"></object>
+                            <object class="editoricons" data="img/eco.svg"></object>
+                            <object class="editoricons" data="img/casual.svg"></object>
                         </div>
-                        <div class="filterBy">
-                            FILTER BY EDITOR
-                        </div>
+                        <button class="businessbutton">FILTER BY EDITOR</button>
                     </div>
                 </div>
             </div>
@@ -331,6 +353,7 @@
     function toeditors() {
         document.getElementById("content1").style.transform = "translate(-300vw, 0)";
         document.getElementById("content2").style.transform = "translate(-200vw, 0)";
+        document.getElementById("modal").style.transform = "translate(-200vw, 0)";
         document.getElementById("content3").style.transform = "translate(-100vw, 0)";
         document.getElementById("content4").style.transform = "translate(0vw, 0)";
         document.getElementById('left').onclick = function () {
@@ -343,6 +366,7 @@
     function toprinciples() {
         document.getElementById("content1").style.transform = "translate(-200vw, 0)";
         document.getElementById("content2").style.transform = "translate(-100vw, 0)";
+        document.getElementById("modal").style.transform = "translate(-100vw, 0)";
         document.getElementById("content3").style.transform = "translate(0vw, 0)";
         document.getElementById("content4").style.transform = "translate(100vw, 0)";
         document.getElementById('right').onclick = function () {
@@ -359,6 +383,7 @@
     function toindex() {
         document.getElementById("content1").style.transform = "translate(-100vw, 0)";
         document.getElementById("content2").style.transform = "translate(0vw, 0)";
+        document.getElementById("modal").style.transform = "translate(0vw, 0)";
         document.getElementById("content3").style.transform = "translate(100vw, 0)";
         document.getElementById("content4").style.transform = "translate(200vw, 0)";
         document.getElementById('right').onclick = function () {
@@ -375,6 +400,7 @@
     function tonominate() {
         document.getElementById("content1").style.transform = "translate(0vw, 0)";
         document.getElementById("content2").style.transform = "translate(100vw, 0)";
+        document.getElementById("modal").style.transform = "translate(100vw, 0)";
         document.getElementById("content3").style.transform = "translate(200vw, 0)";
         document.getElementById("content4").style.transform = "translate(300vw, 0)";
         document.getElementById('right').onclick = function () {
@@ -400,6 +426,10 @@
             }, 100);
         });
     })();
+
+    function openmodal() {
+        document.getElementById('modal').style.display = 'flex';
+    }
 </script>
 
 </html>
