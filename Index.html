@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <section class="content" id="content5">
+        <img class="splash" src="img/wren2.jpg" alt="">
+        <div class="homewrapper">
+            <h1>Phonebook</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <button class="explore" onclick="explore()">Explore</button>
+        </div>
+    </section>
     <div class="content" id="modal" onclick="this.style.display='none'">
         <div class="abtbusinesswrapper">
             <div class="abtbusiness">
@@ -48,7 +56,7 @@
     </div>
     <nav>
         <button class="leftButton" id="left" onclick="tonominate()">Nominate</button>
-        <div class="logo">PHONEBOOK</div>
+        <button class="logo" onclick="tohome()">PHONEBOOK</button>
         <button class="rightButton" id="right" onclick="toprinciples()">Principles</button>
     </nav>
     <section class="content" id="content1">
@@ -232,97 +240,97 @@
             <div class="header">MEET OUR EDITORS</div>
             <div class="editorwrapper">
                 <div class="divider">
-                <div class="editor">
-                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
-                    <div class="editorAbout">
-                        <div>
-                            <h2>Jack Bublitz</h2>
-                            <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
+                    <div class="editor">
+                        <img class="editorImg" src="img/Blaine.jpg" alt="test">
+                        <div class="editorAbout">
+                            <div>
+                                <h2>Jack Bublitz</h2>
+                                <h4>Designer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua.</p>
+                            </div>
+                            <p>Find Jack at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                            <button class="businessbutton editorbutton" onclick="toindex()">FILTER BY EDITOR</button>
                         </div>
-                        <p>Find Jack at:</p>
-                        <div class="editorIcons">
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/eco.svg"></object>
-                            <object class="editoricons" data="img/casual.svg"></object>
-                        </div>
-                        <button class="businessbutton editorbutton" onclick="toindex()">FILTER BY EDITOR</button>
                     </div>
                 </div>
-            </div>
-            <div class="divider">
-                <div class="editor">
-                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
-                    <div class="editorAbout">
-                        <div>
-                            <h2>Madisyn Muggeridge</h2>
-                            <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                        </div>
-                        <p>Find Madisyn at:</p>
-                        <div class="editorIcons">
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/eco.svg"></object>
-                            <object class="editoricons" data="img/casual.svg"></object>
-                        </div>
-                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
-                    </div>
-                </div>
-            </div>
-            <div class="divider">
-                <div class="editor">
-                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
-                    <div class="editorAbout">
-                        <div>
-                            <h2>Cindy Cruz</h2>
-                            <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                        </div>
-                        <p>Find Cindy at:</p>
-                        <div class="editorIcons">
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/eco.svg"></object>
-                            <object class="editoricons" data="img/casual.svg"></object>
-                        </div>
-                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
-                    </div>
-                </div>
-            </div>
                 <div class="divider">
-                <div class="editor">
-                    <img class="editorImg" src="img/Blaine.jpg" alt="test">
-                    <div class="editorAbout">
-                        <div>
-                            <h2>Jamie Gambles</h2>
-                            <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
+                    <div class="editor">
+                        <img class="editorImg" src="img/Blaine.jpg" alt="test">
+                        <div class="editorAbout">
+                            <div>
+                                <h2>Madisyn Muggeridge</h2>
+                                <h4>Designer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua.</p>
+                            </div>
+                            <p>Find Madisyn at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                            <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                         </div>
-                        <p>Find Jamie at:</p>
-                        <div class="editorIcons">
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/eco.svg"></object>
-                            <object class="editoricons" data="img/casual.svg"></object>
-                        </div>
-                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                     </div>
                 </div>
-            </div>
+                <div class="divider">
+                    <div class="editor">
+                        <img class="editorImg" src="img/Blaine.jpg" alt="test">
+                        <div class="editorAbout">
+                            <div>
+                                <h2>Cindy Cruz</h2>
+                                <h4>Designer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua.</p>
+                            </div>
+                            <p>Find Cindy at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                            <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="editor">
+                        <img class="editorImg" src="img/Blaine.jpg" alt="test">
+                        <div class="editorAbout">
+                            <div>
+                                <h2>Jamie Gambles</h2>
+                                <h4>Designer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna aliqua.</p>
+                            </div>
+                            <p>Find Jamie at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                            <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="editor">
                     <img class="editorImg" src="img/Blaine.jpg" alt="test">
                     <div class="editorAbout">
@@ -350,6 +358,14 @@
 </body>
 
 <script>
+    function explore() {
+        document.getElementById('content5').style.transform = "translate(0vw, -100vh)"
+    }
+
+    function tohome() {
+        document.getElementById('content5').style.transform = "translate(0vw, 0vh)"
+    }
+
     function toeditors() {
         document.getElementById("content1").style.transform = "translate(-300vw, 0)";
         document.getElementById("content2").style.transform = "translate(-200vw, 0)";
