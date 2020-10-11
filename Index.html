@@ -10,149 +10,133 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav>
-            <div class="leftButton" id="left" onclick="tonominate()">
-                Nominate
-            </div>
-            <div class="logo">
-                PHONEBOOK
-            </div>
-            <div class="rightButton" id="right" onclick="toprinciples()">
-                Principles
-            </div>
-        </nav>
-        <section class="content" id="content1">
-            <div class="header">
-                KNOW A GREAT PLACE?
-            </div>
-
-            <div class="formwrapper">
+    <nav>
+        <button class="leftButton" id="left" onclick="tonominate()">Nominate</button>
+        <div class="logo">PHONEBOOK</div>
+        <button class="rightButton" id="right" onclick="toprinciples()">Principles</button>
+    </nav>
+    <section class="content" id="content1">
+        <div class="wrapper">
+            <div class="header">KNOW A GREAT PLACE?</div>
+            <div class="nominatewrapper">
                 <div class="form">
-                    <div>
-                        <form class="boxed">
-                            <input type="radio" id="owner" name="skills" value="owner">
-                            <label for="owner">BUSINESS OWNER</label>
-
-                            <input type="radio" id="customer" name="skills" value="customer">
-                            <label for="customer">CUSTOMER</label>
-                    </div>
-
-                    <p>I AM A:</p>
-
-                    <label for="name">YOUR NAME:</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-                    <label for="email">EMAIL:</label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                    <label for="businessname">BUSINESS NAME:</label>
-                    <input type="text" id="businessname" name="businessname" placeholder="Business name..">
-
-
-                    <label for="reason">REASON FOR NOMINATING:</label>
-                    <textarea id="reason" name="reason" placeholder="Write something.." style="height:150px"></textarea>
-
-                    <input class="submit" type="submit" value="SUBMIT">
-                    </form>
+                    <section class="formentry formselection">
+                        <label>I AM A:</label>
+                        <button class="nominateselection">BUSINESS OWNER</button>
+                        <button class="nominateselection">CUSTOMER</button>
+                    </section>
+                    <section class="formentry">
+                        <label>YOUR NAME:</label>
+                        <textarea placeholder="John Appleseed..." rows="1"></textarea>
+                    </section>
+                    <section class="formentry">
+                        <label>EMAIL:</label>
+                        <textarea placeholder="Johnappleseed@mail.com..." rows="1"></textarea>
+                    </section>
+                    <section class="formentry Name">
+                        <label>BUSINESS NAME:</label>
+                        <textarea placeholder="Johns Apples..." rows="1"></textarea>
+                    </section>
+                    <section class="formentry Name">
+                        <label>REASON FOR NOMINATING:</label>
+                        <textarea placeholder="Great selection of apples..." rows="1"></textarea>
+                    </section>
+                    <button class="submit">SUBMIT</button>
                 </div>
                 <div class="illustration">
-                    <img class="illustration" src="img/illustration.svg" alt="nomination illustration">
+                    <img class="illustration" src="img/illustration.svg" alt="illustration">
                 </div>
             </div>
-        </section>
-        <section class="content" id="content2">
+    </section>
+    <section class="content" id="content2">
+        <div class="wrapper">
             <div class="header filter">
-                filter
+                <textarea class="search" placeholder="Search a business..." rows="1"></textarea>
+                <label class="filterlabel">Filter by:</label>
+                <div class="filterbuttonwrapper">
+                    <button class="filterbutton">VALUE</button>
+                    <button class="filterbutton">CHARITABLE</button>
+                    <button class="filterbutton">LOCATION</button>
+                    <button class="filterbutton">ECO-FRIENDLY</button>
+                </div>
             </div>
             <div class="businesswrapper">
                 <div class="botd">
-                    <img class="botdImg" src="img/wren2.jpg" alt="Wren Kitchen">
+                    <img class="botdimg" src="img/wrenrescaled.jpg" alt="wren">
                     <div class="botdContent">
-                        <p>BUSINESS OF THE DAY</p>
+                        <h4>BUSINESS OF THE DAY</h4>
                         <h2>WREN KITCHEN</h2>
-                        <p>MT WELLINGTON, AKL</p>
+                        <h3>MT WELLINGTON, AKL</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. </p>
-                        <div class="botdButton">
-                            <div class="visitUs">
-                                VISIT US
-                            </div>
-                            <div class="learnMore">
-                                LEARN MORE
-                            </div>
+                        <div class="botdbuttonwrapper">
+                            <button class="botdbutton">VISIT US</button>
+                            <button class="botdbutton">LEARN MORE</button>
                         </div>
                     </div>
                 </div>
                 <div class="business">
-                    <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
+                    <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
                     <div class="businessContent">
                         <div>
                             <h2>KIND</h2>
-                            <p>MORNINGSIDE, AKL</p>
+                            <h3>MORNINGSIDE, AKL</h3>
                         </div>
-
                         <div class="businessIcons">
                             <object class="icons" data="img/clock.svg"></object>
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <div class="lmButton">
-                            LEARN MORE
-                        </div>
+                        <button class="businessbutton">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="business">
                     <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
                     <div class="businessContent">
                         <h2>KIND</h2>
-                        <p>MORNINGSIDE, AKL</p>
+                        <h3>MORNINGSIDE, AKL</h3>
                         <div class="businessIcons">
                             <object class="icons" data="img/clock.svg"></object>
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <div class="lmButton">
-                            LEARN MORE
-                        </div>
+                        <button class="businessbutton">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="business">
                     <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
                     <div class="businessContent">
                         <h2>KIND</h2>
-                        <p>MORNINGSIDE, AKL</p>
+                        <h3>MORNINGSIDE, AKL</h3>
                         <div class="businessIcons">
                             <object class="icons" data="img/clock.svg"></object>
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <div class="lmButton">
-                            LEARN MORE
-                        </div>
+                        <button class="businessbutton">LEARN MORE</button>
                     </div>
                 </div>
                 <div class="business">
                     <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
                     <div class="businessContent">
                         <h2>KIND</h2>
-                        <p>MORNINGSIDE, AKL</p>
+                        <h3>MORNINGSIDE, AKL</h3>
                         <div class="businessIcons">
                             <object class="icons" data="img/clock.svg"></object>
                             <object class="icons" data="img/eco.svg"></object>
                             <object class="icons" data="img/casual.svg"></object>
                         </div>
-                        <div class="lmButton">
-                            LEARN MORE
-                        </div>
+                        <button class="businessbutton">LEARN MORE</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="content" id="content3">
-            <div class="header">
-                OUR VALUES
-            </div>
-            <div class="principlewrapper">
+        </div>
+    </section>
+    <section class="content" id="content3">
+        <div class="wrapper">
+            <div class="header">OUR VALUES</div>
+            <div class="principlewrapper ">
                 <div class="principle A">
                     <object class="principleimg" data="img/value.svg"></object>
                     <div class="principletitle">VALUE</div>
@@ -207,11 +191,11 @@
                     </p>
                 </div>
             </div>
-        </section>
-        <section class="content" id="content4">
-            <div class="header">
-                MEET OUR EDITORS
-            </div>
+        </div>
+    </section>
+    <section class="content" id="content4">
+        <div class="wrapper">
+            <div class="header">MEET OUR EDITORS</div>
             <div class="editorwrapper">
                 <div class="editor">
                     <img class="editorImg" src="img/test.png" alt="test">
@@ -339,73 +323,83 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-    </div>
-
-    <script>
-        function toeditors() {
-            document.getElementById("content1").style.transform = "translate(-300vw, 0)";
-            document.getElementById("content2").style.transform = "translate(-200vw, 0)";
-            document.getElementById("content3").style.transform = "translate(-100vw, 0)";
-            document.getElementById("content4").style.transform = "translate(0vw, 0)";
-            document.getElementById('left').onclick = function() { toprinciples(); }
-            document.getElementById('left').innerHTML = "Principles"
-            document.getElementById('right').style.display = 'none';
-        }
-
-        function toprinciples() {
-            document.getElementById("content1").style.transform = "translate(-200vw, 0)";
-            document.getElementById("content2").style.transform = "translate(-100vw, 0)";
-            document.getElementById("content3").style.transform = "translate(0vw, 0)";
-            document.getElementById("content4").style.transform = "translate(100vw, 0)";
-            document.getElementById('right').onclick = function() { toeditors(); }
-            document.getElementById('right').innerHTML = "Editors"
-            document.getElementById('left').onclick = function() { toindex(); }
-            document.getElementById('left').innerHTML = "Index"
-            document.getElementById('right').style.display = 'initial';
-        }
-
-        function toindex() {
-            document.getElementById("content1").style.transform = "translate(-100vw, 0)";
-            document.getElementById("content2").style.transform = "translate(0vw, 0)";
-            document.getElementById("content3").style.transform = "translate(100vw, 0)";
-            document.getElementById("content4").style.transform = "translate(200vw, 0)";
-            document.getElementById('right').onclick = function() { toprinciples(); }
-            document.getElementById('right').innerHTML = "Principles"
-            document.getElementById('left').onclick = function() { tonominate(); }
-            document.getElementById('left').innerHTML = "Nominate"
-            document.getElementById('left').style.display = 'initial';
-        }
-
-        function tonominate() {
-            document.getElementById("content1").style.transform = "translate(0vw, 0)";
-            document.getElementById("content2").style.transform = "translate(100vw, 0)";
-            document.getElementById("content3").style.transform = "translate(200vw, 0)";
-            document.getElementById("content4").style.transform = "translate(300vw, 0)";
-            document.getElementById('right').onclick = function() { toindex(); }
-            document.getElementById('right').innerHTML = "Index"
-            document.getElementById('left').style.display = 'none';
-        }
-
-        (function () {
-            const classes = document.body.classList;
-            let timer = 0;
-            window.addEventListener('resize', function () {
-                if (timer) {
-                    clearTimeout(timer);
-                    timer = null;
-                } else
-                    classes.add('stop-transitions');
-
-                timer = setTimeout(() => {
-                    classes.remove('stop-transitions');
-                    timer = null;
-                }, 100);
-            });
-        })();
-    </script>
-
+        </div>
+    </section>
 </body>
+
+<script>
+    function toeditors() {
+        document.getElementById("content1").style.transform = "translate(-300vw, 0)";
+        document.getElementById("content2").style.transform = "translate(-200vw, 0)";
+        document.getElementById("content3").style.transform = "translate(-100vw, 0)";
+        document.getElementById("content4").style.transform = "translate(0vw, 0)";
+        document.getElementById('left').onclick = function () {
+            toprinciples();
+        }
+        document.getElementById('left').innerHTML = "Principles"
+        document.getElementById('right').style.display = 'none';
+    }
+
+    function toprinciples() {
+        document.getElementById("content1").style.transform = "translate(-200vw, 0)";
+        document.getElementById("content2").style.transform = "translate(-100vw, 0)";
+        document.getElementById("content3").style.transform = "translate(0vw, 0)";
+        document.getElementById("content4").style.transform = "translate(100vw, 0)";
+        document.getElementById('right').onclick = function () {
+            toeditors();
+        }
+        document.getElementById('right').innerHTML = "Editors"
+        document.getElementById('left').onclick = function () {
+            toindex();
+        }
+        document.getElementById('left').innerHTML = "Index"
+        document.getElementById('right').style.display = 'initial';
+    }
+
+    function toindex() {
+        document.getElementById("content1").style.transform = "translate(-100vw, 0)";
+        document.getElementById("content2").style.transform = "translate(0vw, 0)";
+        document.getElementById("content3").style.transform = "translate(100vw, 0)";
+        document.getElementById("content4").style.transform = "translate(200vw, 0)";
+        document.getElementById('right').onclick = function () {
+            toprinciples();
+        }
+        document.getElementById('right').innerHTML = "Principles"
+        document.getElementById('left').onclick = function () {
+            tonominate();
+        }
+        document.getElementById('left').innerHTML = "Nominate"
+        document.getElementById('left').style.display = 'initial';
+    }
+
+    function tonominate() {
+        document.getElementById("content1").style.transform = "translate(0vw, 0)";
+        document.getElementById("content2").style.transform = "translate(100vw, 0)";
+        document.getElementById("content3").style.transform = "translate(200vw, 0)";
+        document.getElementById("content4").style.transform = "translate(300vw, 0)";
+        document.getElementById('right').onclick = function () {
+            toindex();
+        }
+        document.getElementById('right').innerHTML = "Index"
+        document.getElementById('left').style.display = 'none';
+    }
+
+    (function () {
+        const classes = document.body.classList;
+        let timer = 0;
+        window.addEventListener('resize', function () {
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+            } else
+                classes.add('stop-transitions');
+
+            timer = setTimeout(() => {
+                classes.remove('stop-transitions');
+                timer = null;
+            }, 100);
+        });
+    })();
+</script>
 
 </html>
