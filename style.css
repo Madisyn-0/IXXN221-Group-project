@@ -6,11 +6,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body.stop-transitions * {
+    transition: none !important;
+  }
+
 .wrapper {
     background-color: #111;
 }
 
 nav {
+    position: relative;
+    z-index: 100;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #222;
@@ -21,24 +27,19 @@ nav {
 }
 
 .leftButton {
+    grid-column: 1/2;
     text-align: left;
 }
 
 .logo {
+    grid-column: 2/3;
     text-align: center;
     font-weight: 900;
 }
 
 .rightButton {
+    grid-column: 3/4;
     text-align: right;
-}
-
-.contentwrapper {
-    display: grid;
-    grid-template-columns: 100vw 100vw 100vw 100vw;
-    overflow-x: auto;
-    margin-top: 40px;
-    height: calc(100vh - 85px)
 }
 
 section {
@@ -46,11 +47,30 @@ section {
 }
 
 .content {
-    width: auto;
-    padding-right: 150px;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    transition: all .2s;
     padding-left: 150px;
-    background-color: #222;
-    min-height: calc(100% - 20px);
+    padding-right: 150px;
+}
+
+
+#content1 {
+    transform: translate(-100vw, 0);
+}
+
+#content2 {
+    transform: translate(0vw, 0);
+}
+
+#content3 {
+    transform: translate(100vw, 0);
+}
+
+#content4 {
+    transform: translate(200vw, 0);
 }
 
 .header {

@@ -12,173 +12,171 @@
 <body>
     <div class="wrapper">
         <nav>
-            <div class="leftButton">
-                nominate
+            <div class="leftButton" id="left" onclick="tonominate()">
+                Nominate
             </div>
             <div class="logo">
                 PHONEBOOK
             </div>
-            <div class="rightButton">
-                Editors
+            <div class="rightButton" id="right" onclick="toprinciples()">
+                Principles
             </div>
         </nav>
-        <div class="contentwrapper">
-            <section class="content">
-                <div class="header">
-                    KNOW A GREAT PLACE?
-                </div>
+        <section class="content" id="content1">
+            <div class="header">
+                KNOW A GREAT PLACE?
+            </div>
 
-                <div class="formwrapper">
-                    <div class="form">
+            <div class="formwrapper">
+                <div class="form">
+                    <div>
+                        <form class="boxed">
+                            <input type="radio" id="owner" name="skills" value="owner">
+                            <label for="owner">BUSINESS OWNER</label>
+
+                            <input type="radio" id="customer" name="skills" value="customer">
+                            <label for="customer">CUSTOMER</label>
+                    </div>
+
+                    <p>I AM A:</p>
+
+                    <label for="name">YOUR NAME:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">EMAIL:</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <label for="businessname">BUSINESS NAME:</label>
+                    <input type="text" id="businessname" name="businessname" placeholder="Business name..">
+
+
+                    <label for="reason">REASON FOR NOMINATING:</label>
+                    <textarea id="reason" name="reason" placeholder="Write something.." style="height:150px"></textarea>
+
+                    <input class="submit" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+                <div class="illustration">
+                    <img class="illustration" src="img/illustration.svg" alt="nomination illustration">
+                </div>
+            </div>
+        </section>
+        <section class="content" id="content2">
+            <div class="header filter">
+                filter
+            </div>
+            <div class="businesswrapper">
+                <div class="botd">
+                    <img class="botdImg" src="img/wren2.jpg" alt="Wren Kitchen">
+                    <div class="botdContent">
+                        <p>BUSINESS OF THE DAY</p>
+                        <h2>WREN KITCHEN</h2>
+                        <p>MT WELLINGTON, AKL</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. </p>
+                        <div class="botdButton">
+                            <div class="visitUs">
+                                VISIT US
+                            </div>
+                            <div class="learnMore">
+                                LEARN MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="business">
+                    <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
+                    <div class="businessContent">
                         <div>
-                            <form class="boxed">
-                                <input type="radio" id="owner" name="skills" value="owner">
-                                <label for="owner">BUSINESS OWNER</label>
-
-                                <input type="radio" id="customer" name="skills" value="customer">
-                                <label for="customer">CUSTOMER</label>
-                        </div>
-
-                        <p>I AM A:</p>
-
-                        <label for="name">YOUR NAME:</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
-                        <label for="email">EMAIL:</label>
-                        <input type="text" id="email" name="email" placeholder="Your email..">
-                        <label for="businessname">BUSINESS NAME:</label>
-                        <input type="text" id="businessname" name="businessname" placeholder="Business name..">
-
-
-                        <label for="reason">REASON FOR NOMINATING:</label>
-                        <textarea id="reason" name="reason" placeholder="Write something.."
-                            style="height:150px"></textarea>
-
-                        <input class="submit" type="submit" value="SUBMIT">
-                        </form>
-                    </div>
-                    <div class="illustration">
-                        <img class="illustration" src="img/illustration.svg" alt="nomination illustration">
-                    </div>
-                </div>
-            </section>
-            <section class="content">
-                <div class="header filter">
-                    filter
-                </div>
-                <div class="businesswrapper">
-                    <div class="botd">
-                        <img class="botdImg" src="img/wren2.jpg" alt="Wren Kitchen">
-                        <div class="botdContent">
-                            <p>BUSINESS OF THE DAY</p>
-                            <h2>WREN KITCHEN</h2>
-                            <p>MT WELLINGTON, AKL</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. </p>
-                            <div class="botdButton">
-                                <div class="visitUs">
-                                    VISIT US
-                                </div>
-                                <div class="learnMore">
-                                    LEARN MORE
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="business">
-                        <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
-                        <div class="businessContent">
-                            <div>
-                                <h2>KIND</h2>
-                                <p>MORNINGSIDE, AKL</p>
-                            </div>
-
-                            <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
-                            </div>
-                            <div class="lmButton">
-                                LEARN MORE
-                            </div>
-                        </div>
-                    </div>
-                    <div class="business">
-                        <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
-                        <div class="businessContent">
                             <h2>KIND</h2>
                             <p>MORNINGSIDE, AKL</p>
-                            <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
-                            </div>
-                            <div class="lmButton">
-                                LEARN MORE
-                            </div>
                         </div>
-                    </div>
-                    <div class="business">
-                        <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
-                        <div class="businessContent">
-                            <h2>KIND</h2>
-                            <p>MORNINGSIDE, AKL</p>
-                            <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
-                            </div>
-                            <div class="lmButton">
-                                LEARN MORE
-                            </div>
+
+                        <div class="businessIcons">
+                            <object class="icons" data="img/clock.svg"></object>
+                            <object class="icons" data="img/eco.svg"></object>
+                            <object class="icons" data="img/casual.svg"></object>
                         </div>
-                    </div>
-                    <div class="business">
-                        <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
-                        <div class="businessContent">
-                            <h2>KIND</h2>
-                            <p>MORNINGSIDE, AKL</p>
-                            <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
-                            </div>
-                            <div class="lmButton">
-                                LEARN MORE
-                            </div>
+                        <div class="lmButton">
+                            LEARN MORE
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="content">
-                <div class="header">
-                    OUR VALUES
+                <div class="business">
+                    <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
+                    <div class="businessContent">
+                        <h2>KIND</h2>
+                        <p>MORNINGSIDE, AKL</p>
+                        <div class="businessIcons">
+                            <object class="icons" data="img/clock.svg"></object>
+                            <object class="icons" data="img/eco.svg"></object>
+                            <object class="icons" data="img/casual.svg"></object>
+                        </div>
+                        <div class="lmButton">
+                            LEARN MORE
+                        </div>
+                    </div>
                 </div>
-                <div class="principlewrapper">
-                    <div class="principle A">
-                        <object class="principleimg" data="img/value.svg"></object>
-                        <div class="principletitle">VALUE</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
+                <div class="business">
+                    <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
+                    <div class="businessContent">
+                        <h2>KIND</h2>
+                        <p>MORNINGSIDE, AKL</p>
+                        <div class="businessIcons">
+                            <object class="icons" data="img/clock.svg"></object>
+                            <object class="icons" data="img/eco.svg"></object>
+                            <object class="icons" data="img/casual.svg"></object>
+                        </div>
+                        <div class="lmButton">
+                            LEARN MORE
+                        </div>
                     </div>
-                    <div class="principle B">
-                        <object class="principleimg" data="img/charitable.svg"></object>
-                        <div class="principletitle">CHARITABLE</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
+                </div>
+                <div class="business">
+                    <img class="businessImg" src="img/kind.jpg" alt="Kind cafe">
+                    <div class="businessContent">
+                        <h2>KIND</h2>
+                        <p>MORNINGSIDE, AKL</p>
+                        <div class="businessIcons">
+                            <object class="icons" data="img/clock.svg"></object>
+                            <object class="icons" data="img/eco.svg"></object>
+                            <object class="icons" data="img/casual.svg"></object>
+                        </div>
+                        <div class="lmButton">
+                            LEARN MORE
+                        </div>
                     </div>
-                    <div class="principle C">
-                        <div class="principleimg">
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
-                                style="enable-background:new 0 0 500 500;" xml:space="preserve">
-                                <g id="Layer_21">
-                                    <g id="Layer_1-2">
-                                        <path class="st0" d="M246.9,500c-6.5,0-12.7-2.9-16.9-8c-32.2-39.1-78.5-96.8-116.1-149.6c-10.5-14.4-19.7-29.7-27.4-45.8
+                </div>
+            </div>
+        </section>
+        <section class="content" id="content3">
+            <div class="header">
+                OUR VALUES
+            </div>
+            <div class="principlewrapper">
+                <div class="principle A">
+                    <object class="principleimg" data="img/value.svg"></object>
+                    <div class="principletitle">VALUE</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </div>
+                <div class="principle B">
+                    <object class="principleimg" data="img/charitable.svg"></object>
+                    <div class="principletitle">CHARITABLE</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </div>
+                <div class="principle C">
+                    <div class="principleimg">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
+                            style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                            <g id="Layer_21">
+                                <g id="Layer_1-2">
+                                    <path class="st0" d="M246.9,500c-6.5,0-12.7-2.9-16.9-8c-32.2-39.1-78.5-96.8-116.1-149.6c-10.5-14.4-19.7-29.7-27.4-45.8
                 C75.5,274.1,59,240,58.7,193.6C58.4,154.5,68.1,119,87.6,88c30.1-47.9,73.3-68.9,96.3-77.1c61.8-21.6,130.3-10.8,182.5,28.8
                 c22.9,17.5,53.1,48.3,67.3,96.4l0,0c14.3,48.3,4.5,88.1,0.3,105.2c-5.7,22.9-13.4,37.6-27.3,64.4c-24.5,46.8-51,80.9-70.4,105.8
                 l-3,3.8c-4.9,6.1-19,23.7-61.3,76.6c-4.1,5.1-10.2,8.1-16.7,8.2l-8.2,0.1H246.9z M248.3,43.6c-16.9,0-33.7,2.8-49.7,8.4
@@ -189,176 +187,223 @@
                 c0.1,51.9-41.8,94.1-93.7,94.3C254.1,276.5,253.9,276.5,253.7,276.5z M253.8,131.6c-3.5,0-7,0.3-10.4,1
                 c-19.8,4-35.3,19.4-39.2,39.2c-3,15.5,0.7,30.6,10.5,42.5c17.8,21.6,49.7,24.7,71.3,6.9c21.6-17.8,24.7-49.7,6.9-71.3
                 c-2.1-2.5-4.4-4.9-6.9-6.9C276.9,135.7,265.5,131.6,253.8,131.6z" />
-                                        <rect class="st1" width="500" height="500" />
-                                    </g>
+                                    <rect class="st1" width="500" height="500" />
                                 </g>
-                            </svg>
-                        </div>
-                        <div class="principletitle">
-                            LOCATION
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
+                            </g>
+                        </svg>
                     </div>
-                    <div class="principle">
-                        <object class="principleimg" data="img/eco.svg"></object>
-                        <div class="principletitle">ECO-FRIENDLY</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
+                    <div class="principletitle">
+                        LOCATION
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
                 </div>
-            </section>
-            <section class="content">
-                <div class="header">
-                    MEET OUR EDITORS
+                <div class="principle">
+                    <object class="principleimg" data="img/eco.svg"></object>
+                    <div class="principletitle">ECO-FRIENDLY</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        Lorem ut labore et dolore magna aliqua, adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
                 </div>
-                <div class="editorwrapper">
-                    <div class="editor">
-                        <img class="editorImg" src="img/test.png" alt="test">
-                        <div class="editorAbout">
-                            <div>
-                                <h2>Jack Bublitz</h2>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. </p>
-                            </div>
-                            <div class="editorSocials">
-                                <p>Find Jack at:</p>
-                                <div class="editorIcons">
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                    <object class="editoricons" data="img/clock.svg"></object>
+            </div>
+        </section>
+        <section class="content" id="content4">
+            <div class="header">
+                MEET OUR EDITORS
+            </div>
+            <div class="editorwrapper">
+                <div class="editor">
+                    <img class="editorImg" src="img/test.png" alt="test">
+                    <div class="editorAbout">
+                        <div>
+                            <h2>Jack Bublitz</h2>
+                            <h4>Designer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. </p>
+                        </div>
+                        <div class="editorSocials">
+                            <p>Find Jack at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
                                 <object class="editoricons" data="img/eco.svg"></object>
                                 <object class="editoricons" data="img/casual.svg"></object>
-                                </div>
-                            </div>
-                            <div class="filterBy">
-                                FILTER BY EDITOR
                             </div>
                         </div>
-                    </div>
-                    <div class="editor">
-                        <img class="editorImg" src="img/test.png" alt="test">
-                        <div class="editorAbout">
-                            <div>
-                                <h2>Madisyn Muggeridge</h2>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. </p>
-                            </div>
-                            <div class="editorSocials">
-                                <p>Find Madisyn at:</p>
-                                <div class="editorIcons">
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                                </div>
-                            </div>
-                            <div class="filterBy">
-                                FILTER BY EDITOR
-                            </div>
-                        </div>
-                    </div>
-                    <div class="editor">
-                        <img class="editorImg" src="img/test.png" alt="test">
-                        <div class="editorAbout">
-                            <div>
-                                <h2>Cindy Cruz</h2>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. </p>
-                            </div>
-                            <div class="editorSocials">
-                                <p>Find Cindy at:</p>
-                                <div class="editorIcons">
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                                </div>
-                            </div>
-                            <div class="filterBy">
-                                FILTER BY EDITOR
-                            </div>
-                        </div>
-                    </div>
-                    <div class="editor">
-                        <img class="editorImg" src="img/test.png" alt="test">
-                        <div class="editorAbout">
-                            <div>
-                                <h2>Jamie Gambles</h2>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. </p>
-                            </div>
-                            <div class="editorSocials">
-                                <p>Find Jamie at:</p>
-                                <div class="editorIcons">
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                                </div>
-                            </div>
-                            <div class="filterBy">
-                                FILTER BY EDITOR
-                            </div>
-                        </div>
-                    </div>
-                    <div class="editor">
-                        <img class="editorImg" src="img/test.png" alt="test">
-                        <div class="editorAbout">
-                            <div>
-                                <h2>Katrina Villareal</h2>
-                                <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. </p>
-                            </div>
-                            <div class="editorSocials">
-                                <p>Find Katrina at:</p>
-                                <div class="editorIcons">
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                    <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
-                                </div>
-                            </div>
-                            <div class="filterBy">
-                                FILTER BY EDITOR
-                            </div>
+                        <div class="filterBy">
+                            FILTER BY EDITOR
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+                <div class="editor">
+                    <img class="editorImg" src="img/test.png" alt="test">
+                    <div class="editorAbout">
+                        <div>
+                            <h2>Madisyn Muggeridge</h2>
+                            <h4>Designer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. </p>
+                        </div>
+                        <div class="editorSocials">
+                            <p>Find Madisyn at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                        </div>
+                        <div class="filterBy">
+                            FILTER BY EDITOR
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <img class="editorImg" src="img/test.png" alt="test">
+                    <div class="editorAbout">
+                        <div>
+                            <h2>Cindy Cruz</h2>
+                            <h4>Designer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. </p>
+                        </div>
+                        <div class="editorSocials">
+                            <p>Find Cindy at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                        </div>
+                        <div class="filterBy">
+                            FILTER BY EDITOR
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <img class="editorImg" src="img/test.png" alt="test">
+                    <div class="editorAbout">
+                        <div>
+                            <h2>Jamie Gambles</h2>
+                            <h4>Designer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. </p>
+                        </div>
+                        <div class="editorSocials">
+                            <p>Find Jamie at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                        </div>
+                        <div class="filterBy">
+                            FILTER BY EDITOR
+                        </div>
+                    </div>
+                </div>
+                <div class="editor">
+                    <img class="editorImg" src="img/test.png" alt="test">
+                    <div class="editorAbout">
+                        <div>
+                            <h2>Katrina Villareal</h2>
+                            <h4>Designer</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. </p>
+                        </div>
+                        <div class="editorSocials">
+                            <p>Find Katrina at:</p>
+                            <div class="editorIcons">
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/clock.svg"></object>
+                                <object class="editoricons" data="img/eco.svg"></object>
+                                <object class="editoricons" data="img/casual.svg"></object>
+                            </div>
+                        </div>
+                        <div class="filterBy">
+                            FILTER BY EDITOR
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <script>
-        const button1 = document.getElementById('right');
+        function toeditors() {
+            document.getElementById("content1").style.transform = "translate(-300vw, 0)";
+            document.getElementById("content2").style.transform = "translate(-200vw, 0)";
+            document.getElementById("content3").style.transform = "translate(-100vw, 0)";
+            document.getElementById("content4").style.transform = "translate(0vw, 0)";
+            document.getElementById('left').onclick = function() { toprinciples(); }
+            document.getElementById('left').innerHTML = "Principles"
+            document.getElementById('right').style.display = 'none';
+        }
 
-        button1.onclick = function () {
-            document.getElementById('container').scrollLeft = 10000;
-            behavior
-        };
+        function toprinciples() {
+            document.getElementById("content1").style.transform = "translate(-200vw, 0)";
+            document.getElementById("content2").style.transform = "translate(-100vw, 0)";
+            document.getElementById("content3").style.transform = "translate(0vw, 0)";
+            document.getElementById("content4").style.transform = "translate(100vw, 0)";
+            document.getElementById('right').onclick = function() { toeditors(); }
+            document.getElementById('right').innerHTML = "Editors"
+            document.getElementById('left').onclick = function() { toindex(); }
+            document.getElementById('left').innerHTML = "Index"
+            document.getElementById('right').style.display = 'initial';
+        }
 
-        const button2 = document.getElementById('left');
+        function toindex() {
+            document.getElementById("content1").style.transform = "translate(-100vw, 0)";
+            document.getElementById("content2").style.transform = "translate(0vw, 0)";
+            document.getElementById("content3").style.transform = "translate(100vw, 0)";
+            document.getElementById("content4").style.transform = "translate(200vw, 0)";
+            document.getElementById('right').onclick = function() { toprinciples(); }
+            document.getElementById('right').innerHTML = "Principles"
+            document.getElementById('left').onclick = function() { tonominate(); }
+            document.getElementById('left').innerHTML = "Nominate"
+            document.getElementById('left').style.display = 'initial';
+        }
 
-        button2.onclick = function () {
-            document.getElementById('container').scrollLeft = -10000;
-            behavior
-        };
+        function tonominate() {
+            document.getElementById("content1").style.transform = "translate(0vw, 0)";
+            document.getElementById("content2").style.transform = "translate(100vw, 0)";
+            document.getElementById("content3").style.transform = "translate(200vw, 0)";
+            document.getElementById("content4").style.transform = "translate(300vw, 0)";
+            document.getElementById('right').onclick = function() { toindex(); }
+            document.getElementById('right').innerHTML = "Index"
+            document.getElementById('left').style.display = 'none';
+        }
+
+        (function () {
+            const classes = document.body.classList;
+            let timer = 0;
+            window.addEventListener('resize', function () {
+                if (timer) {
+                    clearTimeout(timer);
+                    timer = null;
+                } else
+                    classes.add('stop-transitions');
+
+                timer = setTimeout(() => {
+                    classes.remove('stop-transitions');
+                    timer = null;
+                }, 100);
+            });
+        })();
     </script>
 
 </body>
