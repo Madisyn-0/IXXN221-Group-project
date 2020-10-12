@@ -9,8 +9,7 @@ body {
 
 body.stop-transitions * {
     transition: none !important;
-  }
-
+}
 
 nav {
     position: relative;
@@ -53,7 +52,6 @@ button:focus {
 button:hover {
     box-sizing: border-box;
     border: 1px solid #FFAC31;
-
 }
 
 .leftButton {
@@ -80,11 +78,15 @@ button:hover {
     color: white;
 }
 
-.rightButton:hover, .leftButton:hover, .logo:hover {
+.rightButton:hover,
+.leftButton:hover,
+.logo:hover {
     border: none;
 }
 
-.rightButton:focus, .leftButton:focus, .logo:focus {
+.rightButton:focus,
+.leftButton:focus,
+.logo:focus {
     background-color: transparent;
 }
 
@@ -175,10 +177,10 @@ nav {
     align-content: center;
     padding-left: auto;
     padding-right: auto;
-    align-items:center
+    align-items: center
 }
 
-.homewrapper h1{
+.homewrapper h1 {
     justify-self: center;
     align-self: center;
     font-size: 135px;
@@ -197,7 +199,6 @@ nav {
     bottom: 20px;
 }
 
-
 .header {
     display: flex;
     flex-direction: row;
@@ -211,7 +212,6 @@ nav {
     font-size: 24px;
 }
 
-
 .nominatewrapper {
     display: grid;
     margin-top: 20px;
@@ -223,7 +223,6 @@ nav {
 .form {
     display: flex;
     flex-direction: column;
-
 }
 
 .illustration {
@@ -242,7 +241,8 @@ nav {
 label {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: auto;;
+    margin-right: auto;
+    ;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -347,17 +347,20 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/3;
-
 }
 
-.botdimg, .businessimg {
+.botdimg,
+.businessimg {
     max-width: 100%;
     height: 365px;
     width: auto;
     object-fit: cover;
 }
 
-.botdContent, .businessContent, .abtbusiness, .editorAbout {
+.botdContent,
+.businessContent,
+.abtbusiness,
+.editorAbout {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -409,13 +412,13 @@ p {
     align-self: flex-end;
 }
 
-.botdbutton, .businessbutton {
+.botdbutton,
+.businessbutton {
     background-color: #005F54;
     color: white;
     margin-left: 20px;
     margin-top: auto;
     align-self: flex-end;
-
 }
 
 .business {
@@ -425,13 +428,13 @@ p {
 
 .businessIcons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
     align-self: center;
-    column-gap: 10px;
+    column-gap: 25px;
 }
 
 .icons {
-    width: 50%;
+    width: 200%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -464,7 +467,6 @@ p {
     flex-direction: column;
     height: 100%;
     padding: 20px;
-
 }
 
 .abtbusiness h6 {
@@ -522,7 +524,9 @@ p {
     padding: 20px;
 }
 
-.A, .B, .C {
+.A,
+.B,
+.C {
     border-right: 1px solid #FFAC31;
 }
 
