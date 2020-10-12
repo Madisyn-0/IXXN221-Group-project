@@ -197,6 +197,15 @@ nav {
 .explore {
     position: fixed;
     bottom: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.explore:hover {
+    background-color: white;
+    color: #000000;
+    border: none;
 }
 
 .header {
@@ -223,10 +232,6 @@ nav {
 .form {
     display: flex;
     flex-direction: column;
-}
-
-.illustration {
-    justify-self: flex-end;
 }
 
 .formselection {
@@ -281,6 +286,12 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 14px;
+    transition: .2s all;
+}
+
+.dropdown:focus {
+    height: 300px;
+    /* height: calc(100% - 475px); */
 }
 
 ::placeholder {
@@ -291,6 +302,7 @@ textarea {
 }
 
 .illustration {
+    justify-self: flex-end;
     align-self: center;
     width: 90%;
 }
@@ -323,7 +335,7 @@ textarea {
     font-size: 14px;
 }
 
-.filterbuttonwrapper {
+#filterbuttonwrapper {
     height: 35px;
     display: flex;
     flex-direction: row;
@@ -332,6 +344,25 @@ textarea {
 
 .filterbutton {
     margin-left: 10px;
+    border: none;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filterbutton:hover {
+    color: #005F54;
+    border: none;
+}
+
+.filterbutton:focus {
+    background-color: #005F54;
+    color: white;
 }
 
 .businesswrapper {
@@ -341,6 +372,7 @@ textarea {
     grid-row-gap: 40px;
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 .botd {
@@ -421,6 +453,19 @@ p {
     align-self: flex-end;
 }
 
+.botdbutton:hover,
+.businessbutton:hover {
+    background-color: white;
+    color: #005F54;
+    border: 1px solid #005F54;
+}
+
+.botdbutton:focus,
+.businessbutton:focus {
+    background-color: white;
+    color: #005F54;
+}
+
 .business {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -431,6 +476,7 @@ p {
     grid-template-columns: repeat(10, 1fr);
     align-self: center;
     column-gap: 25px;
+    margin-top: 20px;
 }
 
 .icons {
@@ -450,6 +496,7 @@ p {
     top: 45px;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
     justify-content: center;
 }
 
