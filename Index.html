@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Phonebook</title>
-    <script src="jamie.js"></script>
+
 </head>
 
 <body>
@@ -56,9 +56,13 @@
         </div>
     </div>
     <nav>
-        <button class="leftButton" id="left" onclick="tonominate()">Nominate</button>
+        <button class="leftButton" id="left" onclick="tonominate()">
+            <div class="arrow"> <img class="arrowLeft" src="img/left_white.png" alt="">Nominate</div>
+        </button>
         <button class="logo" onclick="tohome()">PHONEBOOK</button>
-        <button class="rightButton" id="right" onclick="toprinciples()">Principles</button>
+        <button class="rightButton" id="right" onclick="toprinciples()">
+            <div class="arrow aright">Principles <img class="arrowRight" src="img/right_white.png" alt=""></div>
+        </button>
     </nav>
     <section class="content" id="content1">
         <div class="wrapper">
@@ -99,14 +103,21 @@
                 <textarea class="search" placeholder="Search a business..." rows="1"></textarea>
                 <label class="filterlabel">Filter by:</label>
                 <div id="filterbuttonwrapper">
-                    <button class="filterbutton active" onclick="filterSelection('all')">ALL</button>
-                    <div>
-                        
-                    </div>
-                    <button class="filterbutton" onclick="filterSelection('value')"> <div class="testicon"> <img src="value.png" alt="value icon"> VALUE</div></button>
-                    <button class="filterbutton" onclick="filterSelection('charitable')">CHARITABLE</button>
-                    <button class="filterbutton" onclick="filterSelection('location')">NEAR YOU</button>
-                    <button class="filterbutton" onclick="filterSelection('eco')">ECO-FRIENDLY</button>
+                    <button class="filterbutton active" onclick="filterSelection('all')">
+                        <div class="testicon">ALL</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('value')">
+                        <div class="filtericons"> <img src="img/value.png" alt="value icon">VALUE</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('charitable')">
+                        <div class="filtericons"> <img src="img/charitable.png" alt="charitable icon">CHARITABLE</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('location')">
+                        <div class="filtericons"> <img src="img/location.png" alt="location icon">NEAR YOU</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('eco')">
+                        <div class="filtericons"> <img src="img/eco.png" alt="eco icon">ECO-FRIENDLY</div>
+                    </button>
                 </div>
             </div>
             <div class="businesswrapper">
@@ -127,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="filterDiv value">
+                <div class="filterDiv value eco">
                     <div class="business">
                         <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
                         <div class="businessContent">
@@ -136,9 +147,9 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/value.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/value_black.png" alt="value icon">
+                                <img class="icons" src="img/eco_black.png" alt="eco icon">
+                                <img class="icons" src="img/casual_black.png" alt="casual icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -153,9 +164,9 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/value.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/value_black.png" alt="value icon">
+                                <img class="icons" src="img/charitable_black.png" alt="charitable icon">
+                                <img class="icons" src="img/casual_black.png" alt="casual icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -170,15 +181,15 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/location_black.png" alt="location icon">
+                                <img class="icons" src="img/time_black.png" alt="time icon">
+                                <img class="icons" src="img/casual_black.png" alt="casual icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
                     </div>
                 </div>
-                <div class="filterDiv location">
+                <div class="filterDiv location eco">
                     <div class="business">
                         <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
                         <div class="businessContent">
@@ -187,26 +198,9 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
-                            </div>
-                            <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="filterDiv eco">
-                    <div class="business">
-                        <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
-                        <div class="businessContent">
-                            <div>
-                                <h2>KIND</h2>
-                                <h3>MORNINGSIDE, AKL</h3>
-                            </div>
-                            <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/location_black.png" alt="location icon">
+                                <img class="icons" src="img/time_black.png" alt="time icon">
+                                <img class="icons" src="img/eco_black.png" alt="eco icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -221,9 +215,26 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/time_black.png" alt="time icon">
+                                <img class="icons" src="img/eco_black.png" alt="eco icon">
+                                <img class="icons" src="img/casual_black.png" alt="casual icon">
+                            </div>
+                            <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterDiv eco charitable value">
+                    <div class="business">
+                        <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
+                        <div class="businessContent">
+                            <div>
+                                <h2>KIND</h2>
+                                <h3>MORNINGSIDE, AKL</h3>
+                            </div>
+                            <div class="businessIcons">
+                                <img class="icons" src="img/charitable_black.png" alt="charitable icon">
+                                <img class="icons" src="img/value_black.png" alt="value icon">
+                                <img class="icons" src="img/eco_black.png" alt="eco icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -238,9 +249,9 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/value.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/value_black.png" alt="value icon">
+                                <img class="icons" src="img/time_black.png" alt="time icon">
+                                <img class="icons" src="img/casual_black.png" alt="casual icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -255,15 +266,15 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/value.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/location_black.png" alt="location icon">
+                                <img class="icons" src="img/value_black.png" alt="value icon">
+                                <img class="icons" src="img/time_black.png" alt="time icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
                     </div>
                 </div>
-                <div class="filterDiv eco charitable">
+                <div class="filterDiv location charitable">
                     <div class="business">
                         <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
                         <div class="businessContent">
@@ -272,9 +283,9 @@
                                 <h3>MORNINGSIDE, AKL</h3>
                             </div>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/location_black.png" alt="location icon">
+                                <img class="icons" src="img/charitable_black.png" alt="charitable icon">
+                                <img class="icons" src="img/time_black.png" alt="time icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -287,9 +298,10 @@
                             <h2>KIND</h2>
                             <h3>MORNINGSIDE, AKL</h3>
                             <div class="businessIcons">
-                                <object class="icons" data="img/charitable.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/location.svg"></object>
+                                <img class="icons" src="img/charitable_black.png" alt="charitable icon">
+                                <img class="icons" src="img/value_black.png" alt="value icon">
+                                <img class="icons" src="img/eco_black.png" alt="eco icon">
+                                <img class="icons" src="img/location_black.png" alt="location icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -302,9 +314,9 @@
                             <h2>KIND</h2>
                             <h3>MORNINGSIDE, AKL</h3>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/charitable.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/casual_black.png" alt="casual icon">
+                                <img class="icons" src="img/charitable_black.png" alt="charitable icon">
+                                <img class="icons" src="img/time_black.png" alt="time icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -317,9 +329,9 @@
                             <h2>KIND</h2>
                             <h3>MORNINGSIDE, AKL</h3>
                             <div class="businessIcons">
-                                <object class="icons" data="img/clock.svg"></object>
-                                <object class="icons" data="img/eco.svg"></object>
-                                <object class="icons" data="img/casual.svg"></object>
+                                <img class="icons" src="img/time_black.png" alt="time icon">
+                                <img class="icons" src="img/eco_black.png" alt="eco icon">
+                                <img class="icons" src="img/location_black.png" alt="location icon">
                             </div>
                             <button class="businessbutton" onclick="openmodal()">LEARN MORE</button>
                         </div>
@@ -377,12 +389,12 @@
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
-                            <p>Find Jack at:</p>
+                            <p class="findeditor">Find Jack at:</p>
                             <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
+                                <img class="editoricons" src="img/snap.png" alt="snapchat">
+                                <img class="editoricons" src="img/insta.png" alt="instagram">
+                                <img class="editoricons" src="img/facebook.png" alt="facebook">
+                                <img class="editoricons" src="img/twitter.png" alt="twitter">
                             </div>
                             <button class="businessbutton editorbutton" onclick="toindex()">FILTER BY EDITOR</button>
                         </div>
@@ -400,12 +412,12 @@
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
-                            <p>Find Madisyn at:</p>
+                            <p class="findeditor">Find Madisyn at:</p>
                             <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
+                                <img class="editoricons" src="img/snap.png" alt="snapchat">
+                                <img class="editoricons" src="img/insta.png" alt="instagram">
+                                <img class="editoricons" src="img/facebook.png" alt="facebook">
+                                <img class="editoricons" src="img/twitter.png" alt="twitter">
                             </div>
                             <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                         </div>
@@ -423,12 +435,12 @@
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
-                            <p>Find Cindy at:</p>
+                            <p class="findeditor">Find Cindy at:</p>
                             <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
+                                <img class="editoricons" src="img/snap.png" alt="snapchat">
+                                <img class="editoricons" src="img/insta.png" alt="instagram">
+                                <img class="editoricons" src="img/facebook.png" alt="facebook">
+                                <img class="editoricons" src="img/twitter.png" alt="twitter">
                             </div>
                             <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                         </div>
@@ -446,12 +458,12 @@
                                     adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
-                            <p>Find Jamie at:</p>
+                            <p class="findeditor">Find Jamie at:</p>
                             <div class="editorIcons">
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/clock.svg"></object>
-                                <object class="editoricons" data="img/eco.svg"></object>
-                                <object class="editoricons" data="img/casual.svg"></object>
+                                <img class="editoricons" src="img/snap.png" alt="snapchat">
+                                <img class="editoricons" src="img/insta.png" alt="instagram">
+                                <img class="editoricons" src="img/facebook.png" alt="facebook">
+                                <img class="editoricons" src="img/twitter.png" alt="twitter">
                             </div>
                             <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                         </div>
@@ -468,12 +480,12 @@
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                 et dolore magna aliqua.</p>
                         </div>
-                        <p>Find Katrina at:</p>
+                        <p class="findeditor">Find Katrina at:</p>
                         <div class="editorIcons">
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/clock.svg"></object>
-                            <object class="editoricons" data="img/eco.svg"></object>
-                            <object class="editoricons" data="img/casual.svg"></object>
+                            <img class="editoricons" src="img/snap.png" alt="snapchat">
+                            <img class="editoricons" src="img/insta.png" alt="instagram">
+                            <img class="editoricons" src="img/facebook.png" alt="facebook">
+                            <img class="editoricons" src="img/twitter.png" alt="twitter">
                         </div>
                         <button class="businessbutton">FILTER BY EDITOR</button>
                     </div>
@@ -481,10 +493,7 @@
             </div>
         </div>
     </section>
+    <script src="jamie.js"></script>
 </body>
-
-<!-- <script>
-
-</script> -->
 
 </html>

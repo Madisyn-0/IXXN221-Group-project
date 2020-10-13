@@ -91,7 +91,7 @@ function openmodal() {
 window.onload = function() {
     filterSelection("all");
     buttonSelector();
-  };
+  }
   
   // month filtering
   filterSelection("all");

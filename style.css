@@ -22,6 +22,23 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     transition: all .2s;
+    
+}
+
+.arrow {
+    display: flex;
+    align-content: center;
+}
+
+.arrowLeft, .arrowRight {
+    height: 18px;
+    width: 18px;
+    padding-right: 10px;
+}
+
+.arrowRight {
+    padding-left: 0px;
+    padding-left: 10px;
 }
 
 button {
@@ -245,7 +262,6 @@ label {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: auto;
-    ;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -289,7 +305,6 @@ textarea {
 
 .dropdown:focus {
     height: 120px;
-    /* height: calc(100% - 475px); */
 }
 
 ::placeholder {
@@ -343,8 +358,6 @@ textarea {
 .filterbutton {
     margin-left: 10px;
     border: none;
-    /* display: flex;
-    flex-direction: row; */
 }
 
 .filterDiv {
@@ -356,8 +369,11 @@ textarea {
     display: block;
 }
 
-.testicon {
-    background-color: #FFAC31;
+.filtericons {
+    display: flex;
+}
+
+.filtericons img {
     height: 35px;
 }
 
@@ -482,20 +498,17 @@ p {
 
 .businessIcons {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-self: center;
     column-gap: 25px;
     margin-top: 20px;
 }
 
 .icons {
-    width: 200%;
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
-    background-color: #FFAC31;
-    border-radius: 100px;
 }
 
 #modal {
@@ -503,10 +516,7 @@ p {
     z-index: 200;
     position: fixed;
     top: 45px;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8);
-    /* background-color: white; */
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(80, 80, 80, 0.8);
     justify-content: center;
 }
 
@@ -595,14 +605,6 @@ p {
     padding: 10px;
 }
 
-.st0 {
-    fill: #FFAC31;
-}
-
-.st1 {
-    fill: transparent;
-}
-
 .principletitle {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -616,6 +618,7 @@ p {
     margin-top: 20px;
     gap: 40px;
     grid-auto-rows: 365px;
+    margin-bottom: 20px;
 }
 
 .editor {
@@ -634,7 +637,12 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     column-gap: 5px;
-    float: left;
+    margin-top: auto;
+}
+
+.findeditor {
+    margin-top: auto;
+    margin-bottom: 0px;
 }
 
 .editoricons {
