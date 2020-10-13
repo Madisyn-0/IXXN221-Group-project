@@ -343,6 +343,8 @@ textarea {
 .filterbutton {
     margin-left: 10px;
     border: none;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .filterDiv {
@@ -352,6 +354,11 @@ textarea {
 
 .show {
     display: block;
+}
+
+.testicon {
+    background-color: #FFAC31;
+    height: 35px;
 }
 
 .filterbutton:hover, .nominateselection:hover {
