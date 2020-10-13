@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Phonebook</title>
 
 </head>
@@ -56,13 +57,9 @@
         </div>
     </div>
     <nav>
-        <button class="leftButton" id="left" onclick="tonominate()">
-            <div class="arrow"> <img class="arrowLeft" src="img/left_white.png" alt="">Nominate</div>
-        </button>
+        <button class="leftbutton" id="left" onclick="tonominate()"><div class="icon"></div><div id="lefttext">Nominate</div></button>
         <button class="logo" onclick="tohome()">PHONEBOOK</button>
-        <button class="rightButton" id="right" onclick="toprinciples()">
-            <div class="arrow aright">Principles <img class="arrowRight" src="img/right_white.png" alt=""></div>
-        </button>
+        <button class="rightbutton" id="right" onclick="toprinciples()"><div id="righttext">Principles</div><div class="icon"></div></button>
     </nav>
     <section class="content" id="content1">
         <div class="wrapper">
@@ -101,23 +98,12 @@
         <div class="wrapper">
             <div class="header filter">
                 <textarea class="search" placeholder="Search a business..." rows="1"></textarea>
-                <label class="filterlabel">Filter by:</label>
                 <div id="filterbuttonwrapper">
-                    <button class="filterbutton active" onclick="filterSelection('all')">
-                        <div class="testicon">ALL</div>
-                    </button>
-                    <button class="filterbutton" onclick="filterSelection('value')">
-                        <div class="filtericons"> <img src="img/value.png" alt="value icon">VALUE</div>
-                    </button>
-                    <button class="filterbutton" onclick="filterSelection('charitable')">
-                        <div class="filtericons"> <img src="img/charitable.png" alt="charitable icon">CHARITABLE</div>
-                    </button>
-                    <button class="filterbutton" onclick="filterSelection('location')">
-                        <div class="filtericons"> <img src="img/location.png" alt="location icon">NEAR YOU</div>
-                    </button>
-                    <button class="filterbutton" onclick="filterSelection('eco')">
-                        <div class="filtericons"> <img src="img/eco.png" alt="eco icon">ECO-FRIENDLY</div>
-                    </button>
+                    <label class="filterlabel">Filter by:</label>
+                    <button class="filterbutton" id="value" onclick="filterSelection('value')"><div class="icon"></div><div class="filterbuttoninner">VALUE</div></button>
+                    <button class="filterbutton" onclick="filterSelection('charitable')"><div class="icon"></div><div class="filterbuttoninner">CHARITABLE</div></button>
+                    <button class="filterbutton" onclick="filterSelection('location')"><div class="icon"></div><div class="filterbuttoninner">NEAR YOU</div></button>
+                    <button class="filterbutton" onclick="filterSelection('eco')"><div class="icon"></div><div class="filterbuttoninner">ECO-FRIENDLY</div></button>
                 </div>
             </div>
             <div class="businesswrapper">
@@ -396,7 +382,7 @@
                                 <img class="editoricons" src="img/facebook.png" alt="facebook">
                                 <img class="editoricons" src="img/twitter.png" alt="twitter">
                             </div>
-                            <button class="businessbutton editorbutton" onclick="toindex()">FILTER BY EDITOR</button>
+                            <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                         </div>
                     </div>
                 </div>

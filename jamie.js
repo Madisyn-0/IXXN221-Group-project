@@ -15,7 +15,7 @@ function toeditors() {
     document.getElementById('left').onclick = function () {
         toprinciples();
     }
-    document.getElementById('left').innerHTML = "Principles"
+    document.getElementById('lefttext').innerHTML = "Principles"
     document.getElementById('right').style.display = 'none';
 }
 
@@ -28,12 +28,12 @@ function toprinciples() {
     document.getElementById('right').onclick = function () {
         toeditors();
     }
-    document.getElementById('right').innerHTML = "Editors"
+    document.getElementById('righttext').innerHTML = "Editors"
     document.getElementById('left').onclick = function () {
         toindex();
     }
-    document.getElementById('left').innerHTML = "Index"
-    document.getElementById('right').style.display = 'initial';
+    document.getElementById('lefttext').innerHTML = "Index"
+    document.getElementById('right').style.display = 'flex';
 }
 
 function toindex() {
@@ -45,12 +45,12 @@ function toindex() {
     document.getElementById('right').onclick = function () {
         toprinciples();
     }
-    document.getElementById('right').innerHTML = "Principles"
+    document.getElementById('righttext').innerHTML = "Principles"
     document.getElementById('left').onclick = function () {
         tonominate();
     }
-    document.getElementById('left').innerHTML = "Nominate"
-    document.getElementById('left').style.display = 'initial';
+    document.getElementById('lefttext').innerHTML = "Nominate"
+    document.getElementById('left').style.display = 'flex';
 }
 
 function tonominate() {
@@ -62,7 +62,7 @@ function tonominate() {
     document.getElementById('right').onclick = function () {
         toindex();
     }
-    document.getElementById('right').innerHTML = "Index"
+    document.getElementById('righttext').innerHTML = "Index"
     document.getElementById('left').style.display = 'none';
 }
 
@@ -90,8 +90,17 @@ function openmodal() {
 
 window.onload = function() {
     filterSelection("all");
-    buttonSelector();
   }
+
+
+  //function changevalue() {
+ //   var x = document.getElementById("value");
+ //   if (x.style.backgroundColor = "#F6F8F9") {
+ //       x.style.backgroundColor = "#005F54";
+ //   } else {
+  //    x.style.backgroundColor = "#F6F8F9";
+ //   }
+ // }
   
   // month filtering
   filterSelection("all");
