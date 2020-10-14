@@ -486,6 +486,10 @@ textarea {
     object-fit: cover;
 }
 
+.botdicons {
+    width: 55%;
+}
+
 .botdContent,
 .businessContent,
 .abtbusiness,
@@ -765,7 +769,7 @@ p {
     height: 365px;
 }
 
-.editorIcons {
+.editorIcons, .botdIcons {
     display: grid;
     margin: 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
