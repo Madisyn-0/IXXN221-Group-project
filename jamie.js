@@ -15,7 +15,7 @@ function toeditors() {
     document.getElementById('left').onclick = function () {
         toprinciples();
     }
-    document.getElementById('lefttext').innerHTML = "Principles"
+    document.getElementById('lefttext').innerHTML = "About"
     document.getElementById('right').style.display = 'none';
 }
 
@@ -45,7 +45,7 @@ function toindex() {
     document.getElementById('right').onclick = function () {
         toprinciples();
     }
-    document.getElementById('righttext').innerHTML = "Principles"
+    document.getElementById('righttext').innerHTML = "About"
     document.getElementById('left').onclick = function () {
         tonominate();
     }

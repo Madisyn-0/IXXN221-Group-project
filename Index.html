@@ -42,23 +42,35 @@
                     </li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
-                    <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Consectetur adipiscing elit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit magna aliqua  labore et dolore.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut.
+                    <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Consectetur
+                    adipiscing elit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit magna aliqua labore et dolore.
                 </p>
                 <h6>Katrina Villareal</h6>
                 <div class="abtbuttonwrapper">
                     <button class="businessbutton">BACK</button>
-                    <button class="businessbutton" onclick="openmodal()"><a class="visitbutton" href="https://www.wren.co.nz/">VISIT US</a></button>
+                    <form method="GET" action="https://www.wren.co.nz/"><input class="visitbutton" type="submit"
+                            value="VISIT US"></form>
                 </div>
             </div>
             <img src="img/wrenrescaled.jpg">
         </div>
     </div>
     <nav>
-        <button class="leftbutton" id="left" onclick="tonominate()"><div class="icon"></div><div id="lefttext">Nominate</div></button>
+        <button class="leftbutton" id="left" onclick="tonominate()">
+            <div class="icon"></div>
+            <div id="lefttext">Nominate</div>
+        </button>
         <button class="logo" onclick="tohome()">PHONEBOOK</button>
-        <button class="rightbutton" id="right" onclick="toprinciples()"><div id="righttext">Principles</div><div class="icon"></div></button>
+        <button class="rightbutton" id="right" onclick="toprinciples()">
+            <div id="righttext">About</div>
+            <div class="icon"></div>
+        </button>
     </nav>
     <section class="content" id="content1">
         <div class="wrapper">
@@ -99,10 +111,22 @@
                 <textarea class="search" placeholder="Search a business..." rows="1"></textarea>
                 <div id="filterbuttonwrapper">
                     <label class="filterlabel">Filter by:</label>
-                    <button class="filterbutton" id="value" onclick="filterSelection('value')"><div class="icon valueicon"></div><div class="filterbuttoninner">VALUE</div></button>
-                    <button class="filterbutton" onclick="filterSelection('charitable')"><div class="icon charitableicon"></div><div class="filterbuttoninner">CHARITABLE</div></button>
-                    <button class="filterbutton" onclick="filterSelection('location')"><div class="icon locationicon"></div><div class="filterbuttoninner">NEAR YOU</div></button>
-                    <button class="filterbutton" onclick="filterSelection('eco')"><div class="icon ecoicon"></div><div class="filterbuttoninner">ECO-FRIENDLY</div></button>
+                    <button class="filterbutton" id="value" onclick="filterSelection('value')">
+                        <div class="icon valueicon"></div>
+                        <div class="filterbuttoninner">VALUE</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('charitable')">
+                        <div class="icon charitableicon"></div>
+                        <div class="filterbuttoninner">CHARITABLE</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('location')">
+                        <div class="icon locationicon"></div>
+                        <div class="filterbuttoninner">NEAR YOU</div>
+                    </button>
+                    <button class="filterbutton" onclick="filterSelection('eco')">
+                        <div class="icon ecoicon"></div>
+                        <div class="filterbuttoninner">ECO-FRIENDLY</div>
+                    </button>
                 </div>
             </div>
             <div class="businesswrapper">
@@ -110,11 +134,15 @@
                     <div class="botd">
                         <img class="botdimg" src="img/wrenrescaled.jpg" alt="wren">
                         <div class="botdContent">
-                            <h4>BUSINESS OF THE DAY</h4>
-                            <h2>WREN KITCHEN</h2>
-                            <h3>MT WELLINGTON, AKL</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
+                            <div class="botdcontenttext">
+                                <h4>BUSINESS OF THE DAY</h4>
+                                <h2>WREN KITCHEN</h2>
+                                <h3>MT WELLINGTON, AKL</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.
+                                </p>
+                            </div>
                             <div class="botdIcons">
                                 <img class="botdicons" src="img/time_white.png" alt="time icon">
                                 <img class="botdicons" src="img/charitable_white.png" alt="charitable icon">
@@ -122,7 +150,8 @@
                                 <img class="botdicons" src="img/eco_white.png" alt="eco icon">
                             </div>
                             <div class="botdbuttonwrapper">
-                                <button class="botdbutton"><a class="visitbutton" href="https://www.wren.co.nz/">VISIT US</a></button>
+                                <form method="GET" action="https://www.wren.co.nz/"><input class="visitbutton"
+                                        type="submit" value="VISIT US"></form>
                                 <button class="botdbutton" onclick="openmodal()">LEARN MORE</button>
                             </div>
                         </div>
@@ -362,6 +391,20 @@
                     </p>
                 </div>
             </div>
+            <div class="contactwrapper">
+                <div class="contactcontent">
+                    <div class="header">CONNECT WITH US</div>
+                    <div class="contacticons">
+                        <img class="editoricons" src="img/snap.png" alt="snapchat">
+                        <img class="editoricons" src="img/insta.png" alt="instagram">
+                        <img class="editoricons" src="img/facebook.png" alt="facebook">
+                        <img class="editoricons" src="img/twitter.png" alt="twitter">
+                    </div>
+                    <div class="contactphone">Phone:<p>04-472 3498</p></div>
+                    <div class="contactemail">Email:<p>contact@phonebook.com</p></div>
+
+                </div>
+            </div>
         </div>
     </section>
     <section class="content" id="content4">
@@ -375,7 +418,9 @@
                             <div>
                                 <h2>Jack Bublitz</h2>
                                 <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
                             <p class="findeditor">Find Jack at:</p>
@@ -396,7 +441,9 @@
                             <div>
                                 <h2>Madisyn Muggeridge</h2>
                                 <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
                             <p class="findeditor">Find Madisyn at:</p>
@@ -417,7 +464,9 @@
                             <div>
                                 <h2>Cindy Cruz</h2>
                                 <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
                             <p class="findeditor">Find Cindy at:</p>
@@ -438,7 +487,9 @@
                             <div>
                                 <h2>Jamie Gambles</h2>
                                 <h4>Designer</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
                                     et dolore magna aliqua.</p>
                             </div>
                             <p class="findeditor">Find Jamie at:</p>
@@ -458,7 +509,9 @@
                         <div>
                             <h2>Katrina Villareal</h2>
                             <h4>Designer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore
                                 et dolore magna aliqua.</p>
                         </div>
                         <p class="findeditor">Find Katrina at:</p>
@@ -468,7 +521,7 @@
                             <img class="editoricons" src="img/facebook.png" alt="facebook">
                             <img class="editoricons" src="img/twitter.png" alt="twitter">
                         </div>
-                        <button class="businessbutton">FILTER BY EDITOR</button>
+                        <button class="businessbutton editorbutton">FILTER BY EDITOR</button>
                     </div>
                 </div>
             </div>
