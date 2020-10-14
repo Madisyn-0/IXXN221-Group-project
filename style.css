@@ -590,50 +590,6 @@ p {
     height: 365px;
 }
 
-@media only screen and (max-width: 950px) {
-    .filter {
-        height: 95px;
-        flex-direction: column;
-        padding-top: 20px;
-    }
-    .search {
-        align-self: flex-start;
-    }
-    #filterbuttonwrapper {
-        align-self: flex-start;
-        margin-right: auto;
-        margin-left: 0px;
-    }
-    .filterbutton {
-        padding: 0px;
-    }
-    .filterbuttoninner {
-        display: none;
-    }
-    .filterbutton .icon {
-        padding: 0px;
-    }
-    .businesswrapper {
-        flex-direction: column;
-    }
-    .business {
-        flex-wrap: wrap;
-        max-width: 1250px;
-        width: calc(100vw - 40px);
-        margin-right: 0px;
-        margin-left: 0px;
-        grid-template-columns: 1fr 1fr;
-    }
-    .show {
-        flex-wrap: wrap;
-        max-width: 1250px;
-        width: calc(100vw - 40px);
-        margin-right: 0px;
-        margin-left: 0px;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .businessIcons {
     display: flex;
     flex-direction: row;
@@ -792,4 +748,162 @@ p {
     width: 0px;
     background: transparent;
     display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .homewrapper h1 {
+        font-size: 95px;
+    }
+    
+    .homewrapper p {
+        font-size: 14px;
+    }
+
+    .nominatewrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: calc(100% - 55px);
+    }
+
+    .filter {
+        height: 95px;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .search {
+        align-self: flex-start;
+    }
+    #filterbuttonwrapper {
+        align-self: flex-start;
+        margin-right: auto;
+        margin-left: 0px;
+    }
+    .businesswrapper {
+        flex-direction: column;
+    }
+    .business {
+        flex-wrap: wrap;
+        max-width: 1250px;
+        width: calc(100vw - 40px);
+        margin-right: 0px;
+        margin-left: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .icons {
+        width: 35px;
+        height: 35px;
+    }
+    .show {
+        flex-wrap: wrap;
+        max-width: 1250px;
+        width: calc(100vw - 40px);
+        margin-right: 0px;
+        margin-left: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .abtbusinesswrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .principlewrapper {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        height: calc(100% - 55px);
+    }
+
+    .principleimg {
+        width: 30%;
+    }
+    .B{
+        border: none;
+    }
+
+    .editorwrapper {
+        grid-auto-rows: 765px;
+    }
+
+    .editor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 365px auto;
+    }
+
+    .editorImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 18px;
+    }
+
+    .homewrapper h1 {
+        font-size: 65px;
+    }
+    
+    .homewrapper p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .filterbutton {
+        padding: 0px;
+    }
+
+    .filterbuttoninner {
+        display: none;
+    }
+    .botd {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .principlewrapper {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        height: calc(100% - 55px);
+    }
+
+    .principleimg {
+        width: 20%;
+    }
+
+    .A, .B, .C {
+        border-right: none;
+        border-bottom: 1px solid #FFAC31;
+    }
+
+    .editorwrapper {
+        grid-auto-rows: 675px;
+    }
+
+    .editor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px auto;
+    }
+    .editorImg {
+        width: 300px;
+        height: 300px;
+    }
+    .editoricons {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 13px;
+    }
 }
