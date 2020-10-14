@@ -832,7 +832,10 @@ p {
     margin-top: 20px;
     gap: 40px;
     grid-auto-rows: 365px;
-    margin-bottom: 20px;
+}
+
+.editorwrapper .divider {
+    margin-bottom: -20px;
 }
 
 .editor {
@@ -995,6 +998,11 @@ p {
         grid-auto-rows: 765px;
     }
 
+    .editorwrapper .divider {
+        margin-bottom: 0px;
+    }
+    
+
     .editor {
         grid-template-columns: 1fr;
         grid-template-rows: 365px auto;
@@ -1107,34 +1115,59 @@ p {
     display: none;
     }
 
+    .contactcontent .contactemail, .contactphone {
+        font-size: 14px;
+    }
+
+    .contactcontent p {
+        font-size: 13px;
+    }
+
     .search {
         width: calc(100vw - 40px);
     }
 
+    .formselection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nominateselection {
+        margin: 10px;
+        margin-right: auto;
+    }
+
+    .dropdown:focus {
+        height: 100px;
+    }
+
     .business {
+        padding-bottom: 10px;
+        padding-top: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 215px;
+        grid-template-rows: 200px 300px;
+        height: 500px;
     }
 
     .filterDiv {
         padding: 0px;
         margin: 0px;
-        width: calc(100vw - 40px);
     }
 
     .show {
         padding: 0px;
         margin: 0px;
         width: calc(100vw - 40px);
+        height: 500px;
     }
 
 .businessimg {
-        height: 150px;
+        height: 200px;
         width: calc(100vw - 40px);
     }
 
     .businessContent {
-        height: 215px;
+        height: 280px;
         padding-right: 0px;
     }
 

@@ -36,6 +36,47 @@ function toprinciples() {
     document.getElementById('right').style.display = 'flex';
 }
 
+function filterbyeditor() {
+    document.getElementById("content1").style.transform = "translate(-100vw, 0)";
+    document.getElementById("content2").style.transform = "translate(0vw, 0)";
+    document.getElementById("modal").style.transform = "translate(0vw, 0)";
+    document.getElementById("content3").style.transform = "translate(100vw, 0)";
+    document.getElementById("content4").style.transform = "translate(200vw, 0)";
+
+    document.getElementById('right').onclick = function () {
+        toprinciples();
+    }
+
+    document.getElementById('left').onclick = function () {
+        tonominate();
+    }
+
+    document.getElementById('left').style.display = 'flex';
+    document.getElementById('lefttext').innerHTML = "Nominate"
+    document.getElementById('righttext').innerHTML = "About"
+    document.getElementById('right').style.display = 'flex';
+}
+
+function jack() {
+    document.getElementById("search").value = " 'Jack' ";
+}
+
+function madisyn() {
+    document.getElementById("search").value = " 'Madisyn' ";
+}
+
+function cindy() {
+    document.getElementById("search").value = " 'Cindy' ";
+}
+
+function jamie() {
+    document.getElementById("search").value = " 'Jamie' ";
+}
+
+function kat() {
+    document.getElementById("search").value = " 'Kat' ";
+}
+
 function toindex() {
     document.getElementById("content1").style.transform = "translate(-100vw, 0)";
     document.getElementById("content2").style.transform = "translate(0vw, 0)";
