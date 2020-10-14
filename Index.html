@@ -43,12 +43,14 @@
                 </ul>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                    <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Consectetur adipiscing elit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit magna aliqua  labore et dolore.
                 </p>
                 <h6>Katrina Villareal</h6>
-                <button class="businessbutton">Visit us</button>
+                <div class="abtbuttonwrapper">
+                    <button class="businessbutton">BACK</button>
+                    <button class="businessbutton" onclick="openmodal()"><a class="visitbutton" href="https://www.wren.co.nz/">VISIT US</a></button>
+                </div>
             </div>
             <img src="img/wrenrescaled.jpg">
         </div>
@@ -97,10 +99,10 @@
                 <textarea class="search" placeholder="Search a business..." rows="1"></textarea>
                 <div id="filterbuttonwrapper">
                     <label class="filterlabel">Filter by:</label>
-                    <button class="filterbutton" id="value" onclick="filterSelection('value')"><div class="icon"></div><div class="filterbuttoninner">VALUE</div></button>
-                    <button class="filterbutton" onclick="filterSelection('charitable')"><div class="icon"></div><div class="filterbuttoninner">CHARITABLE</div></button>
-                    <button class="filterbutton" onclick="filterSelection('location')"><div class="icon"></div><div class="filterbuttoninner">NEAR YOU</div></button>
-                    <button class="filterbutton" onclick="filterSelection('eco')"><div class="icon"></div><div class="filterbuttoninner">ECO-FRIENDLY</div></button>
+                    <button class="filterbutton" id="value" onclick="filterSelection('value')"><div class="icon valueicon"></div><div class="filterbuttoninner">VALUE</div></button>
+                    <button class="filterbutton" onclick="filterSelection('charitable')"><div class="icon charitableicon"></div><div class="filterbuttoninner">CHARITABLE</div></button>
+                    <button class="filterbutton" onclick="filterSelection('location')"><div class="icon locationicon"></div><div class="filterbuttoninner">NEAR YOU</div></button>
+                    <button class="filterbutton" onclick="filterSelection('eco')"><div class="icon ecoicon"></div><div class="filterbuttoninner">ECO-FRIENDLY</div></button>
                 </div>
             </div>
             <div class="businesswrapper">
@@ -114,7 +116,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                             <div class="botdbuttonwrapper">
-                                <button class="botdbutton">VISIT US</button>
+                                <button class="botdbutton"><a class="visitbutton" href="https://www.wren.co.nz/">VISIT US</a></button>
                                 <button class="botdbutton" onclick="openmodal()">LEARN MORE</button>
                             </div>
                         </div>
@@ -139,11 +141,11 @@
                 </div>
                 <div class="filterDiv value charitable">
                     <div class="business">
-                        <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
+                        <img class="businessimg" src="img/raglan.jpg" alt="Raglan Roast cafe">
                         <div class="businessContent">
                             <div>
-                                <h2>KIND</h2>
-                                <h3>MORNINGSIDE, AKL</h3>
+                                <h2>RAGLAN ROAST</h2>
+                                <h3>TE ARO, WLG</h3>
                             </div>
                             <div class="businessIcons">
                                 <img class="icons" src="img/value_black.png" alt="value icon">
@@ -154,16 +156,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="filterDiv location">
+                <div class="filterDiv location value">
                     <div class="business">
-                        <img class="businessimg" src="img/kind.jpg" alt="Kind cafe">
+                        <img class="businessimg" src="img/lab.jpg" alt="The LAB cafe">
                         <div class="businessContent">
                             <div>
-                                <h2>KIND</h2>
-                                <h3>MORNINGSIDE, AKL</h3>
+                                <h2>THE LAB</h2>
+                                <h3>TE ARO, WLG</h3>
                             </div>
                             <div class="businessIcons">
                                 <img class="icons" src="img/location_black.png" alt="location icon">
+                                <img class="icons" src="img/value_black.png" alt="value icon">
                                 <img class="icons" src="img/time_black.png" alt="time icon">
                                 <img class="icons" src="img/casual_black.png" alt="casual icon">
                             </div>

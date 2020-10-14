@@ -87,12 +87,6 @@ function openmodal() {
     document.getElementById('modal').style.display = 'flex';
 }
 
-
-window.onload = function() {
-    filterSelection("all");
-  }
-
-
   //function changevalue() {
  //   var x = document.getElementById("value");
  //   if (x.style.backgroundColor = "#F6F8F9") {
@@ -102,7 +96,7 @@ window.onload = function() {
  //   }
  // }
   
-  // month filtering
+  // filtering
   filterSelection("all");
   
   function filterSelection(c) {
@@ -114,10 +108,6 @@ window.onload = function() {
       w3RemoveClass(x[i], "show");
       if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     }
-  
-    // scroll to top of page when clicked
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
   }
   
   // Show filtered elements

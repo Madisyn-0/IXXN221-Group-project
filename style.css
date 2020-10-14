@@ -80,8 +80,8 @@ button:hover {
     border-radius: 12.5px;
     height: 25px;
     width: 25px;
-    background: url('img/left_yellow.png') no-repeat left center;
-    background-size: 25px;
+    background: url('img/left_white.png') no-repeat left center;
+    background-size: 20px;
     padding-right: 12.5px;
 }
 
@@ -113,8 +113,8 @@ button:hover {
     border-radius: 12.5px;
     height: 25px;
     width: 25px;
-    background: url('img/right_yellow.png') no-repeat right center;
-    background-size: 25px;
+    background: url('img/right_white.png') no-repeat right center;
+    background-size: 20px;
     padding-left: 12.5px;
 }
 
@@ -413,9 +413,24 @@ textarea {
     border-radius: 12.5px;
     height: 25px;
     width: 25px;
-    background: url('img/value.png') no-repeat left center;
     background-size: 25px;
     padding-right: 12.5px;
+}
+
+.valueicon {
+    background: url('img/value.png') no-repeat left center;
+}
+
+.charitableicon {
+    background: url('img/charitable.png') no-repeat left center;
+}
+
+.locationicon {
+    background: url('img/location.png') no-repeat left center;
+}
+
+.ecoicon {
+    background: url('img/eco.png') no-repeat left center;
 }
 
 .filterDiv {
@@ -516,7 +531,7 @@ p {
     margin-bottom: 20px;
 }
 
-.botdButtonwrapper {
+.botdButtonwrapper, .abtbuttonwrapper {
     margin-top: auto;
     align-self: flex-end;
 }
@@ -528,6 +543,20 @@ p {
     margin-left: 20px;
     margin-top: auto;
     align-self: flex-end;
+}
+
+.visitbutton {
+    text-decoration: none;
+    color: white;
+}
+
+.visitbutton:active {
+    color: #005F54;
+}
+
+.visitbutton:hover {
+    background-color: white;
+    color: #005F54;
 }
 
 .botdbutton:hover,
@@ -646,7 +675,7 @@ p {
     font-weight: 900;
     font-style: italic;
     font-size: 18px;
-    margin: 0xp;
+    margin: 0px;
     padding: 0px;
 }
 
