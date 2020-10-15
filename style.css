@@ -668,7 +668,7 @@ p {
     z-index: 200;
     position: fixed;
     top: 45px;
-    background-color: rgba(80, 80, 80, 0.8);
+    background-color: rgba(100, 100, 100);
     justify-content: center;
     overflow: auto;
 }
@@ -1133,12 +1133,16 @@ p {
     }
 
     .nominateselection {
-        margin: 10px;
         margin-right: auto;
+        margin-top: 10px;
     }
 
-    .dropdown:focus {
-        height: 100px;
+    .formentry {
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        font-size: 12px;
     }
 
     .business {
@@ -1161,7 +1165,7 @@ p {
         height: 500px;
     }
 
-.businessimg {
+    .businessimg {
         height: 200px;
         width: calc(100vw - 40px);
     }
